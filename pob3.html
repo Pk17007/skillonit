@@ -6,11 +6,11 @@
 </head>
         <style>
             #banner { width: 80%; margin: auto; height: 30%;color: white;
-                 background-color: rgb(1, 1, 128); display: flex; justify-content: space-between;
+                 background-color: rgb(1, 1, 128); display: flex;
                   border: 3px solid;
                 }
             #b_txt { width: 50%; height: 90%; justify-content: center; margin: auto; margin-left: 10px;}
-            #b_img {display: flex; justify-content: end;} 
+            #b_img {display: flex; justify-content: center;} 
             #service { width: 80%; margin: auto; display: grid; grid-template-columns: repeat(6,1fr);
                 /* border: 3px solid yellow; */
                 padding: 5px; gap: 10px;  }
@@ -29,10 +29,21 @@
             .w_txt>h5 { margin: 5px 0 5px 0;}
             .wrk>div>img { width: 100%;}
 
-            @media all and (min-width:480) and (max-width:768px) {
-                #banner {flex-direction: column;}
+            @media all and (min-width:480px) and (max-width:768px){
+                #banner { flex-direction: column; height: 70%; }
+                #b_txt { height: 30%;}
+                #b_img { margin-top: 0px; height: 50%; }
+                #service {grid-template-columns: repeat(3,1fr);}
+                #work { grid-template-columns: repeat(2,1fr);}
             }
-
+            @media all and (min-width:320px) and (max-width:480px) {
+                 #service {grid-template-columns: repeat(2,1fr);}
+                #work { grid-template-columns: repeat(1,1fr);}
+            }
+            @media all and (max-width:320px) {
+                 body { display: none;}
+            }
+                                /* banner ko thik kar */
         </style>
 <body>
 
