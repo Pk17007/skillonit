@@ -7,10 +7,10 @@
         <style>
             #banner { width: 80%; margin: auto; height: 30%;color: white;
                  background-color: rgb(1, 1, 128); display: flex;
-                  border: 3px solid;
+                  /* border: 3px solid yellowgreen; */
                 }
-            #b_txt { width: 50%; height: 90%; justify-content: center; margin: auto; margin-left: 10px;}
-            #b_img {display: flex; justify-content: center;} 
+            #b_txt { width: 50%; height: 90%; margin: auto;}
+            #b_img {width: 50%; height: 90%; display: flex; margin: auto; justify-content: center;} 
             #service { width: 80%; margin: auto; display: grid; grid-template-columns: repeat(6,1fr);
                 /* border: 3px solid yellow; */
                 padding: 5px; gap: 10px;  }
@@ -30,23 +30,28 @@
             .wrk>div>img { width: 100%;}
 
             @media all and (min-width:480px) and (max-width:768px){
-                #banner { flex-direction: column; height: 70%; }
-                #b_txt { height: 30%;}
-                #b_img { margin-top: 0px; height: 50%; }
+                #banner { flex-direction: column; height: 50%;}
+                #b_txt { height: 30%; width: 90%; font-size: large;}
+                #b_img { margin-top: 0px; height: 50%;width: 90%;}
                 #service {grid-template-columns: repeat(3,1fr);}
                 #work { grid-template-columns: repeat(2,1fr);}
             }
             @media all and (min-width:320px) and (max-width:480px) {
+                #banner { flex-direction: column; height: 50%;}
+                #b_txt { height: 30%; width: 90%; font-size: large;}
+                #b_img { margin-top: 0px; height: 50%;width: 90%;}
                  #service {grid-template-columns: repeat(2,1fr);}
                 #work { grid-template-columns: repeat(1,1fr);}
             }
             @media all and (max-width:320px) {
                  body { display: none;}
             }
+            @media all and (min-width:769) {
+                
+            }
                                 /* banner ko thik kar */
         </style>
 <body>
-
             <div id="banner">
                 <div id="b_txt">
                         <h3>You are in Safe hands</h3>
@@ -204,11 +209,6 @@
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                             </div>
                     </div>
-                    
-
             </div>
-
-
-
 </body>
 </html>
