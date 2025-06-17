@@ -5,24 +5,30 @@
     <title>Document</title>
 </head>
         <style>
-            body { background-image: url(https://media.istockphoto.com/id/174677082/photo/vast-empty-ocean-under-a-cloudy-blue-sky.jpg?s=612x612&w=0&k=20&c=ZhJNj27KoeTHrT3PTB4NMtKG8tZlsBnxjpTP6QKFAng=); background-position: center; background-repeat: no-repeat;margin: inherit; }
+                #bd {
+                    display: grid; grid-template-columns: 3;
+                }
 
-            #rct { border-top-style: double; border-top-color: crimson; border: dashed cyan; height: 100px; width: 50%;}
-
-
+                #bd>div {
+                    border: 10px solid lightblue;
+                }
+                #d6 {grid-column-start: 1;
+                     grid-column-end: 3;}
+                #d1 { grid-column-start: 1;
+                    grid-column-end: 2;}
+                #d3 { grid-column-start: 1;
+                    grid-column-end: 1; column-span: 1;}
         </style>
 <body>
-        <div>
-            <h1>Hello</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ut cum alias. Incidunt, excepturi nam! Ab, illum maiores a dolor optio possimus dicta eos, quod cumque illo sapiente amet rem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non incidunt magni itaque laudantium repellat cumque .</p>
+        <div id="bd">
+            <div id="d1"> 1 </div>
+            <div id="d2"> 2 </div>
+            <div id="d3"> 3 </div>
+            <div id="d4"> 4 </div>
+            <div id="d5"> 5 </div>
+            <div id="d6"> 6 </div>
         </div>
-        <div id="rct">
-            
-
-
-        </div>
-
-
+    
 
 
 
