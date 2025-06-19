@@ -1,6 +1,5 @@
 // comperator
 
-
 // let a = 10
 // let b = "10" 
 // let c = 90
@@ -18,16 +17,27 @@
 // true
 // false
 
+// a= true
+// b = false
 
-a= true
-b = false
+// console.log (a||b)
+// console.log (a&&b)
 
-console.log (a||b)
-console.log (a&&b)
+// c = false
+// d=  true
+// console.log (a||b||c)
+// console.log (a&&d)
 
-c = false
-d=  true
-console.log (a||b||c)
-console.log (a&&d)
+
+
+
+
+
+
+
+
+
+
+
 
 
