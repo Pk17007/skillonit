@@ -19,11 +19,24 @@
 // console.log (x)
 // 12
 
-// x=32;
+
 // var x;
+// x=32;
 // console.log (x)
 // 32          surprise
 
 
+let a;
+a=11
+let b;
+const c = "c1"; 
+var d;
+d="dsaw"
+a=12            //  reassign
+b= true     
+d = "wasd"      // reassign
+// let a= 21 cannot redeclare
+var d=10;
+console.log (a, b, c, d)
 
 
