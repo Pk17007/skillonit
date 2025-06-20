@@ -2,19 +2,19 @@
 
 // grade . exe 
 
-// grade = 94
+grade = 89;
 
-// if (grade>=95){
-//     console.log("A1");
-// }else if (grade>=90){
-//     console.log("A2");
-// }else if (grade>=85){
-//     console.log("B1");
-// }else if (grade>=80){
-//     console.log("B2");
-// }else {
-//     console.log("Ignore it .. . ");
-// }
+if (grade>=95){
+    console.log("A1");
+}else if (grade>=90){
+    console.log("A2");
+}else if (grade>=85){
+    console.log("B1");
+}else if (grade>=80){
+    console.log("B2");
+}else {
+    console.log("Ignore it .. . ");
+}
 
 
 // ////////////////////////////////////////////////
