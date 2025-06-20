@@ -12,16 +12,16 @@
 // console.log (c)
 
 
-//                             // Operators//
-let x = 3;
-let y = 4;
-console.log ("Operators.exe")
-console.log ("Addition", x + y)
-console.log ("Subtraction", x - y)
-console.log ("Multiply", x * y)
-console.log ("divide", x / y)
-console.log ("Exponent", x ** y)
-console.log ( "Reminder",x%y)
+// //                             // Operators//
+// let x = 3;
+// let y = 4;
+// console.log ("Operators.exe")
+// console.log ("Addition", x + y)
+// console.log ("Subtraction", x - y)
+// console.log ("Multiply", x * y)
+// console.log ("divide", x / y)
+// console.log ("Exponent", x ** y)
+// console.log ( "Reminder",x%y)
 
 
 
@@ -38,5 +38,14 @@ console.log ( "Reminder",x%y)
 // console.log (x+z)
 // console.log (z+x)
 
+// ///////////////////////////////////////////
+// let k = 91;
+// let l = 45;
+
+// console.log(k%l);
+// console.log(k/l);
+// console.log(k**l);
+
+//////////////////////////////////////////////
 
 
