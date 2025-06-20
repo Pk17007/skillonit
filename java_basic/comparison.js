@@ -28,6 +28,17 @@
 // console.log (a||b||c)
 // console.log (a&&d)
 
+let r = 12;
+console.log (!r)
+
+
+
+/////////////////////////
+//      || acts as AND gate           1 false in 2 ---- cond false
+//      && acts as OR gate            1 true in 2 ---- cond true
+//      !  acts as NOR gate           checks if data is present in var --- no data === true
+                                        // if data present= = = false
+
 
 
 
