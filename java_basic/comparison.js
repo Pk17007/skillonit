@@ -28,10 +28,8 @@
 // console.log (a||b||c)
 // console.log (a&&d)
 
-let r = 12;
-console.log (!r)
-
-
+// let r = 12;
+// console.log (!r)
 
 /////////////////////////
 //      || acts as AND gate           1 false in 2 ---- cond false

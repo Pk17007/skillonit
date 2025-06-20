@@ -39,4 +39,16 @@ d = "wasd"      // reassign
 var d=10;
 console.log (a, b, c, d)
 
+//////////////////////////////////////////
+// var 
+// (declare - assign)initialization - (redeclare-reassign)-- reinitialization
+
+// let 
+// no redclare
+
+// const 
+// no declare -- --- -intialize is first step
+
+
+
 
