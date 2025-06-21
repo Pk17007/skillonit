@@ -39,12 +39,21 @@
 // Change value of b to fing average
 // it will remove decimal part from the averages'
 
- count=0; 
- b=6;
- for ( a=1; a<=b ; a++){
-    count=count+a;
+//  count=0; 
+//  b=6;
+//  for ( a=1; a<=b ; a++){
+//     count=count+a;
     
- } console.log (Math.floor(count/b))  
+//  } console.log (Math.floor(count/b))  
+
+// ////////////////////////////////////////
+// hotel bill  5% disco on 500+  10% disco on 1000+ nothing on 500-
+
+let bill= 670;
+for(a=bill;a<=500;){
+    console.log (bill ,"5% disco")
+}
+
 
 
 
