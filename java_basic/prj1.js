@@ -36,7 +36,7 @@
 
             // Average of n nos
  // Use of Math.floor
-// Change value of b to fing average
+// Change value of b to get average
 // it will remove decimal part from the averages'
 
 //  count=0; 
@@ -46,9 +46,9 @@
     
 //  } console.log (Math.floor(count/b))  
 
-// ////////////////////////////////////////
-//          pRime nos
-b=59;  //// Enter any no 
+// /////////////////////////////////////////////
+//          Check your pRime nos
+b=49;  //// Enter any no 
 count=0;
 for(a=1;a<=b;a++){
     if(b%a==0){
@@ -61,4 +61,25 @@ if(count==2){
         console.log( b ,"is not a Prime no");
  }
 
+
+////////////////////////////////////////////////
+    // checks positive or negative 
+// var x;
+// x = -32;
+// if (x>0){
+//     console.log("No. is positive");
+// }else{
+//     console.log("No. is negative");
+
+// }
+
+///////////////////////////////////////////////
+            // To check if a string is empty/
+var t;
+t = '';
+if (t==""){
+    console.log("Empty String");    
+}else{
+    console.log("NOT empty String ");
+}
 
