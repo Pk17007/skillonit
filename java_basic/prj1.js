@@ -47,14 +47,18 @@
 //  } console.log (Math.floor(count/b))  
 
 // ////////////////////////////////////////
-// hotel bill  5% disco on 500+  10% disco on 1000+ nothing on 500-
-
-let bill= 670;
-for(a=bill;a<=500;){
-    console.log (bill ,"5% disco")
+//          pRime nos
+b=59;  //// Enter any no 
+count=0;
+for(a=1;a<=b;a++){
+    if(b%a==0){
+    count++;
+    }
 }
-
-
-
+if(count==2){
+        console.log( b ,"is a Prime no");
+    }else{
+        console.log( b ,"is not a Prime no");
+ }
 
 
