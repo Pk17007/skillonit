@@ -73,13 +73,35 @@ if(count==2){
 
 // }
 
-///////////////////////////////////////////////
-            // To check if a string is empty/
-var t;
-t = '';
-if (t==""){
-    console.log("Empty String");    
-}else{
-    console.log("NOT empty String ");
+// ///////////////////////////////////////////////
+//             // To check if a string is empty/
+// var t;
+// t = '';
+// if (t==""){
+//     console.log("Empty String");    
+// }else{
+//     console.log("NOT empty String ");
+// }
+
+////////////////////////////////////////////////
+                    // Notes ka que from nested for loops   //
+for(var i=1;i<=2;i++)
+{
+var bag="";
+for(var j=1; j<=3; j++){
+bag = bag + "Hello ";
+}
+console.log(bag);
 }
 
+////////////////////////////////////////////////
+// for(var father=1; father<=5; father++)
+// {
+// var bag = "";
+// for(var son=1; son<=10; son++)
+// {
+// bag = bag + "*";
+// }
+//     console.log("Field",father,bag);
+// }
+///////////////////////////////////////////////
