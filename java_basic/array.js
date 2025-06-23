@@ -1,4 +1,4 @@
-var m1= ["n1","n2", "manchester",23, 24, 5, [1,2,3,4,5]];
+// var m1= ["n1","n2", "manchester",23, 24, 5, [1,2,3,4,5]];
         // console.log(m1 [5]);
         // console.log (m1.length);
         
@@ -21,5 +21,16 @@ var m1= ["n1","n2", "manchester",23, 24, 5, [1,2,3,4,5]];
 // console.log (m1)
 
 
+
+
+//         //if you know the index of an item, you can remove it from the array using splice(:
+// // o splice(), the first argument says where to start removing items, and the second argument says how many items should be removed. So you can remove more than one item:
+// m1.splice([6][1]);
+// console.log (m1)
+
+
+var num = [ 1 , 2    ,2,3,45,5,5,6,2,1,3]
+
+console.log(num.length);
 
 
