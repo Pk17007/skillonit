@@ -1,5 +1,9 @@
+//file:///D:/NEW%20PARTH/SkillonIT_FED/js-assginments/JS%20logic%20and%20loop%20que.pdf
+
+
 // 2. Write a program to check if a number is even and greater than 10.
 
+//
 // let a = 5;
 
 // if(a>10){
@@ -198,9 +202,17 @@
 ///////////////////////////////////////////////////////////
 // 30. Count how many numbers between 1 to 100 are divisible by 9 using a `while` loop.
 
+// let i = 1;
+// var count = 0;
+// while(i<=100){
+//     if(i%9==0){
+//         count++;
+//     }
+//     i++;
+// }
+// console.log(count);
 
-
-
+//////////////////////////////////////////////////////////
 
 
 
