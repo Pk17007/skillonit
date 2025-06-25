@@ -1,3 +1,5 @@
+//file:///D:/NEW%20PARTH/SkillonIT_FED/js-assginments/JS%20array%20que.pdf
+
 //1. Create an array of 5 numbers and print all the elements using a loop
 
 // var num = [ 12 ,32, 43,24,56];
@@ -139,7 +141,34 @@
 // console.log(c);
 
 ////////////////////////////////////////////////////////
+//17. Find the common elements between two arrays
+
+// let a = [11,34,34,11,45,23,14,53];
+// let b = [12,21,34,23,32];
+
+// for(i=0;i<a.length;i++){
+//     for(j=0;j<b.length;j++){
+//         if(a[i]==b[j]){ 
+//             console.log(a[i],"is common in both arrays")
+//         }
+//     }
+// }
 
 
+/////////////////////////////////////////////////////////////
+// 18 .Find the difference of elements between two arrays (elements that are in one but
+//not the other).
 
-
+let a = [11,34,34,11,45,23,14,53];
+let b = [12,21,34,23,32];
+count=0;
+for(i=0;i<a.length;i++){
+    for(j=0;j<b.length;j++){
+        if(a[i]==b[j]){ 
+            count++;    
+    }else if(count=b.length){
+                console.log(a[i],"is not in both arrays")
+                count = 0;
+            }
+    }
+}
