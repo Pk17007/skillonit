@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        #input{padding-left: 20px;padding-top: 40px; font-size: 20px;}
+        #usn,#pw{width: 200px; height: 20px; margin: 10px;}
+</style>
+<body>
+    <div id="input">
+        <label for="username">Username : </label>
+        <input id="username" placeholder="Please enter your Username" type="text">
+        <br>
+        <label for="password">Password : </label>
+        <input id="password" placeholder="Please enter your Password"  type="password">
+        <br>
+        <button onclick="funClick" >
+                Login
+        </button>
+
+        <div>
+            <h1>Your name and password</h1>
+            <h1 id="name"></h1>
+            <h1 id="pass"></h1>
+        </div>
+    </div>
+</body>
+
+
+<script>
+    let password = document.getElementById("password");
+    let username = document.getElementById("username");
+    let name = document.getElementById("name");
+    let pass = document.getElementById("pass");
+
+    
+    
+    function funClick(){
+            console.log(username.innerText);
+            console.log(name.value);
+            
+    }
+
+
+
+</script>
+</html>
