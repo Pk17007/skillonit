@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title is title!</title>
+</head>
+<body>
+    <h1 id="head" onclick="fun1()">Hello</h1>
+    <p id="para" onmouseover="fun2()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam unde amet necessitatibus repellendus tempora, a voluptatum explicabo, quis maiores labore architecto molestiae blanditiis quod eius itaque cupiditate sed nisi eum.</p>
+
+    
+
+</body>
+<script>
+    // we made a alert with counter which increase when Hello is clicked...
+    let x=1;
+    console.log(document.head.innerText)
+    console.log(document.title)
+    function fun1(){
+        alert("You click Hello for "+x+" times.");
+        x++;
+    }
+    function fun2(){
+        alert("PARA");
+    }
+</script>
+</html>
