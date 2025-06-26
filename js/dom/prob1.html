@@ -4,11 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title is title!</title>
 </head>
-<body>
+<body id="main">
     <h1 id="head" onclick="fun1()">Hello</h1>
     <p id="para" onmouseover="fun2()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam unde amet necessitatibus repellendus tempora, a voluptatum explicabo, quis maiores labore architecto molestiae blanditiis quod eius itaque cupiditate sed nisi eum.</p>
 
-    
+    <button id="btn1" onclick="click" value="">Click ME!!</button>
 
 </body>
 <script>
@@ -23,5 +23,26 @@
     function fun2(){
         alert("PARA");
     }
+
+
+    let a = document.getElementById("head")
+    console.log(a);
+    
+    // console.log(main)
+    
+    // we first get element head form body in 'a' then we clg innertext of 'a'
+    console.log(a.innerText);
+
+
+    // function click(){
+    //     head.innerText
+    // }
+    // nothing happens
+    // it has no vlaue
+    let name = document.innerText.head
+    function click(){
+        name= "abc"
+    }
+
 </script>
 </html>
