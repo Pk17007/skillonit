@@ -159,16 +159,43 @@
 // 18 .Find the difference of elements between two arrays (elements that are in one but
 //not the other).
 
-let a = [11,34,34,11,45,23,14,53];
-let b = [12,21,34,23,32];
-count=0;
-for(i=0;i<a.length;i++){
-    for(j=0;j<b.length;j++){
-        if(a[i]==b[j]){ 
-            count++;    
-    }else if(count=b.length){
-                console.log(a[i],"is not in both arrays")
-                count = 0;
-            }
-    }
-}
+// let a = [11,34,34,11,45,23,14,53];
+// let b = [12,21,34,23,32];
+// count=0;
+// for(i=0;i<a.length;i++){
+//     for(j=0;j<b.length;j++){
+//         if(a[i]==b[j]){ 
+//             count++;    
+//     }else if(count=b.length){
+//                 console.log(a[i],"is not in both arrays")
+//                 count = 0;
+//             }
+//     }
+// }
+
+//////////////////////////////////////////////////////////////////
+// 21. Print all elements that are greater than the average of the array.
+
+                                ///  Boring meth/    /// /
+// let a = [14,11,22,3,21,22,44,51,12,23,14,24,63]
+// let sum = 0;
+// for(i=0;i<a.length;i++){
+//     sum = sum + a[i];  
+    
+// }
+// let avg = Math.floor(sum/a.length)
+// console.log("Average is",avg,"\nNo. more than average");
+
+// for(i=0;i<a.length;i++){
+//     if(a[i]>avg){
+//         console.log(a[i])
+//     }
+// }
+ 
+let a = [14,11,22,3,21,22,44,51,12,23,14,24,63]
+
+
+
+
+
+
