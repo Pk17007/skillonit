@@ -32,16 +32,19 @@
 <script>
 let username = document.getElementById("usn");
 let password = document.getElementById("pw");
-let name = document.getElementById("name")
-let pass = document.getElementById("pass")
+let n = document.getElementById("name")
+let p = document.getElementById("pass")
 
-
+// n and p are attached to name and pass 
+// therefore we used innerText
+// username and apssword are attached to usn and pw
+// they are input tags so we used .value
     
 function funClick(){
-   name.innerText = "Your Username is : "  +username.value;
-   pass.innerText = "Your Password is : " + password.value;
+   n.innerText = "Your Username is : "  +username.value;
+   p.innerText = "Your Password is : " + password.value;
    console.log(username.value);
-    console.log(password.innerText);
+   console.log(password.value);
 }
 
   
