@@ -7,11 +7,17 @@
 <style>
         #input { height: 200px;
              /* display: flex;flex-direction: column;gap: 20px; */
-            border: 3px solid red; 
+            /* border: 3px solid red;  */
         }
         .num { margin-top: 5px; margin-left: 40px;}
         #buttons {margin-left: 40px;}
-        #display { border: 3px solid blue; height: 50px; margin: 10px 40px;}
+        #display { 
+            /* border: 3px solid blue; */
+             height: 50px; margin: 10px 40px;}
+        #buttons>button:hover {
+            color: white;
+            background-color: black;
+        }
 </style>
 <body>
         <div id="input">
@@ -30,6 +36,7 @@
                 <button id="d" onclick="div()">➗</button>
                 <button id="a" onclick="add()">➕</button>
                 <button id="s" onclick="sub()">➖</button>
+                <!-- <button id="clear" onclick="clr()">🗑️</button> -->
             </div>
 
             <div id="display">
@@ -49,7 +56,7 @@
     let d = document.getElementById("d")
     let s = document.getElementById("s")
     let ans = document.getElementById("Answer")
-
+    // let clr = document.getElementById("clear")
     function mul(){
         ans.innerText = "Answer is : " + n1.value*n2.value ;
     }
@@ -57,12 +64,17 @@
         ans.innerText = "Answer is : " + n1.value/n2.value ;
     }
     function add(){
-        ans.innerText = "Answer is : " + n1.value+n2.value ;
+        ans.innerText = "Answer is : "  +(Number( n1.value)+Number( n2.value) );
     }
      // problem in add and sub due to concantenation
+     // Use Number () or +()
+
     function sub(){
-        ans.innerText = "Answer is : " + n1.value-n2.value ;
+        ans.innerText = "Answer is : " +( +n1.value- +n2.value) ;
     }
+    // function clr(){
+    //     ans.innerText = "Answer is : ";
+    // }
 
 
 

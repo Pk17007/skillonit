@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #input {
+        /* border: 3px solid yellowgreen; */
+         padding: 10px;}
+    #display {
+        /* border: 3px solid red; */
+         padding-left: 30px;}
+
+</style>
+<body>
+    <div id="input">
+        <h1>BMI Calculator</h1>
+        <label for="weight">Enter Your Weight (kgs) </label>
+        <input type="number" id="weight">
+        <br><br>
+        <label for="height">Enter Your Height (metres) </label>
+        <input type="number" id="height">
+        <br><br>
+        <button>Calculate</button>
+    </div>
+    <div id="display">
+            <h3 id="bmi"></h3>
+            <h3 id="if"></h3>
+    </div>
+</body>
+<script>
+    let w = document.getElementById("weight")        
+    let h = document.getElementById("height")        
+    let ans = document.getElementById("bmi")
+    let btn = document.querySelector("button")
+    let i = document.getElementById("if")
+    // console.log(btn);
+      //    console.log("hello");
+    //    console.log(w.value);
+    btn.addEventListener("click",calc)
+    function calc(){
+      let h1 = h.value * h.value;
+      let w1 = w.value;
+    //   console.log(w.value/(h1**2));
+    // console.log(h1);// really imp
+        let a = w1/h1
+        ans.innerText = a;
+
+        if(a < 18.4){
+            i.innerText = "Underweight";
+        }else if(a>=18.5 && a<=24.5){
+            i.innerText = "Normal Weight"
+        }else if(a>=24.6 && a<=29.9){
+            i.innerText = "Overweight"
+        }else {
+            i.innerText = "Obese!"
+        }
+
+    }
+
+    
+
+
+
+
+</script>
+
+
+
+
+</html>
