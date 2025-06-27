@@ -108,7 +108,7 @@
 ///////////////////////////////////////////////////////////
 // 14. Count how many times a particular number appears in an array
 
-// let a = [11,34,34,11,45,23,14,553,34,21,11, 11,11,];
+// let a = [11,34,34,11,45,23,14,553,553,34,21,11, 11,11,];
 // const t = 34;
 // count = 0;
 // for(i=0;i<a.length;i++){
@@ -176,7 +176,7 @@
 //////////////////////////////////////////////////////////////////
 // 21. Print all elements that are greater than the average of the array.
 
-                                ///  Boring meth/    /// /
+                                ///  Boring meth    /// /
 // let a = [14,11,22,3,21,22,44,51,12,23,14,24,63]
 // let sum = 0;
 // for(i=0;i<a.length;i++){
@@ -191,11 +191,95 @@
 //         console.log(a[i])
 //     }
 // }
- 
-let a = [14,11,22,3,21,22,44,51,12,23,14,24,63]
+
+// let a = [14,11,22,3,21,22,44,51,12,23,51,24,63]
+
+// for(i=0;i<a.length;i++){
+//     let sum = 0;
+//     sum =sum +a[i];
+//     if(i=a.length-1){
+//         let avg = sum/a.length;
+//         console.log("Average is ",avg);
+//         for(j=0;j<a.length;j++){
+//             if(a[j]>avg){
+//                 console.log(a[j],"is greater than average")
+//             }
+//         }
+//     }
+// }
+                // waste of time
+////////////////////////////////////////////////////////
+//22. Replace all negative numbers in an array with 0.
+//  let a = [14,-11,22,3,-21,22,44,51,-12,23,51,-24,63]
+// let count = 0;
+// for(i=0;i<a.length;i++){
+//     if(a[i]<0){
+//         a[i]=0;
+//         count++
+//     }
+// }
+// console.log(count,"Numbers where negative");
+// console.log(a);
+                    // Works fine
+            /////////////////////////////////////////////
+// let a = [14,-11,22,3,-21,22,44,51,-12,23,51,-24,63]
+// count = 0;
+// for(i=0;i<a.length;i++){
+//     if(a[i]<0){
+//         count++;
+//         function fun(y){
+//             y = y + a[i];
+//             console.log(y);
+//             y=0;
+//         }
+        
+//     }
+// }
+// console.log(count,"numbers are negative.");
+// console.log(fun("0"));
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+//25. Find the sum of even numbers and sum of odd numbers in an array
+//         let a = [14,11,22,3,21,22,44,51,2,23,51,24,63]
+// even = 0;
+// odd = 0;
+// for(i=0;i<a.length;i++){
+//     if(a[i]%2==0){
+//         even = even + a[i];
+//     }else{
+//         odd = odd + a[i]
+//     }
+// }
+// console.log("Sum of all even elements",even);
+// console.log("Sum of all odd elements",odd);
+
+/////////////////////////////////////////////////////////////////
+// 26. Create an array of strings and print each string's length
+
+var string = ["abc", "many","me","look to the sky","mercy","wxyz"]
+for(i=0;i<string.length;i++){
+    
+}
 
 

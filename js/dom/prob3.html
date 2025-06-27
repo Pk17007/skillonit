@@ -1,5 +1,3 @@
-<!-- // Really important problem -->
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -35,18 +33,17 @@ let password = document.getElementById("pw");
 let name = document.getElementById("name")
 let pass = document.getElementById("pass")
 
-
-    
 function funClick(){
-   name.innerText = "Your Username is : "  +username.value;
-   pass.innerText = "Your Password is : " + password.value;
-   console.log(username.value);
-    console.log(password.innerText);
+        console.log(usn.value);
+        console.log(pw.value);
+        if (usn.value == "Reborn@12") {
+                if (pw.value == 1234) {
+                    // Correct credentials
+                }else{
+                    alert("Invalid Password!!")
+                }
+            }else{alert("Invalid Username!!")}
 }
-
-  
-</script>
-</html>
-
-
-
+               
+ </script>
+</html> 
