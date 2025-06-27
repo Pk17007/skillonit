@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+        #input { height: 200px;
+             /* display: flex;flex-direction: column;gap: 20px; */
+            border: 3px solid red; 
+        }
+        .num { margin-top: 5px; margin-left: 40px;}
+        #buttons {margin-left: 40px;}
+        #display { border: 3px solid blue; height: 50px; margin: 10px 40px;}
+</style>
+<body>
+        <div id="input">
+            <div class="num">
+                <label for="n1">Num 1 :</label>
+                <input type="number" name="Enter Number 1 :" id="n1">
+            </div>
+            <br>
+            <div class="num">
+                <label for="n2">Num 2 :</label>
+                <input type="number" name="Enter Number 2 :" id="n2">
+            </div>
+            <br>
+            <div id="buttons">
+                <button id="m" onclick="mul()">✖️</button>
+                <button id="d" onclick="div()">➗</button>
+                <button id="a" onclick="add()">➕</button>
+                <button id="s" onclick="sub()">➖</button>
+            </div>
+
+            <div id="display">
+                    <h2 id="Answer"></h2>
+
+            </div>
+
+
+        </div>
+        
+</body>
+<script>
+    let n1 = document.getElementById("n1")
+    let n2 = document.getElementById("n2")
+    let m = document.getElementById("m")
+    let a = document.getElementById("a")
+    let d = document.getElementById("d")
+    let s = document.getElementById("s")
+    let ans = document.getElementById("Answer")
+
+    function mul(){
+        ans.innerText = "Answer is : " + n1.value*n2.value ;
+    }
+    function div(){
+        ans.innerText = "Answer is : " + n1.value/n2.value ;
+    }
+    function add(){
+        ans.innerText = "Answer is : " + n1.value+n2.value ;
+    }
+     // problem in add and sub due to concantenation
+    function sub(){
+        ans.innerText = "Answer is : " + n1.value-n2.value ;
+    }
+
+
+
+
+
+</script>
+
+
+
+</html>
