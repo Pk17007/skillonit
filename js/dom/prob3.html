@@ -5,9 +5,14 @@
     <title>Document</title>
 </head>
 <style>
-        #input{padding-left: 20px;padding: 20px; font-size: 20px; border: 4px solid blueviolet;}
+        #input{padding-left: 20px;padding: 20px; font-size: 20px; 
+            /* border: 4px solid blueviolet; */
+        }
         #usn,#pw{width: 200px; height: 20px; margin: 10px;}
-        #display { border: 3px solid yellowgreen;}
+        #display { margin-left: 40px; 
+            /* border: 3px solid yellowgreen;  */
+        }
+        
 </style>
 <body>
     <div id="input">
@@ -23,8 +28,8 @@
         </button>
     </div>
     <div id="display">
-            <h1 id="name"></h1>
-            <h1 id="pass"></h1>
+            <h3 id="name"></h3>
+            <h3 id="pass"></h3>
     </div>
 </body>
 <script>
@@ -34,15 +39,20 @@ let name = document.getElementById("name")
 let pass = document.getElementById("pass")
 
 function funClick(){
-        console.log(usn.value);
-        console.log(pw.value);
+    console.log(usn.value);
+    console.log(pw.value);
         if (usn.value == "Reborn@12") {
+            usn.type = "password"
                 if (pw.value == 1234) {
                     // Correct credentials
+                    console.log("Correct credentials..")
                 }else{
                     alert("Invalid Password!!")
                 }
             }else{alert("Invalid Username!!")}
+    
+    name.innerText = "Username is : " + usn.value + ".";
+    pass.innerText = "Password is : " + pw.value + ".";
 }
                
  </script>
