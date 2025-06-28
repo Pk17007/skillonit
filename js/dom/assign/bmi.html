@@ -49,12 +49,19 @@
 
         if(a < 18.4){
             i.innerText = "Underweight";
+            i.style.color = "yellow"
         }else if(a>=18.5 && a<=24.5){
             i.innerText = "Normal Weight"
+            i.style.color = "black"
         }else if(a>=24.6 && a<=29.9){
             i.innerText = "Overweight"
-        }else {
+            i.style.color = "blue";
+        }else if(a>30){
             i.innerText = "Obese!"
+            i.style.color = "red"
+        }
+        else {
+            i.innerText = "Enter Correct weight and height!!"
         }
 
     }
