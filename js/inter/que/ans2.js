@@ -85,13 +85,43 @@
 // 2 3
 // 4 5 6
 
-count = 0;
-for(i=1;i<=6;i++){
-    for(j=1;j<=i;j++){
-        count++;
-        console.log(count)
-    }
-}
+// count = 0;
+// for(i=1;i<=6;i++){
+//     count++;
+//     // console.log(count)
+    
+// }
 
 
+///////////////////////////////////////////////////////
+//24. Print reverse star triangle:
+// * * * * *
+// * * * *
+// * * *
+// * *
+// *
 
+// for(i=5;i>0;i--){
+//     count = "";
+//     for(j=1;j<=i;j++){
+//         count = count + "*";
+//     }
+//     console.log(count);
+// }
+
+///////////////////////////////////////////////////////
+// 30. Use nested loops to print all pairs of numbers from 1 to 3:
+// (1,1) (1,2) (1,3)
+// (2,1) (2,2) (2,3)
+// // (3,1) (3,2) (3,3)
+
+// for(i=1;i<=3;i++){
+//     count = "";
+//     for(j=1;j<=3;j++){
+//         count = count +"("+ String(i)+","+String(j) + ")"+"";
+//     }
+//     console.log(count);
+    
+// }
+
+/////////////////////////////////////////////////////////////////////
