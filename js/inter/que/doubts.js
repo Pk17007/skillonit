@@ -63,4 +63,65 @@
 // console.log("Maximum number is:", max);
 
 ///////////////////////////////////////////////////////////////
+// Find the minimum number in an array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////
+// Swap the first and last element of an array.
+
+// let arr = [10, 20, 30, 40, 50];
+
+// let first = 0;
+// let last = arr.length - 1;
+
+// // Swapping first and last element
+// let temp = arr[first];
+// arr[first] = arr[last];
+// arr[last] = temp;
+
+// console.log("Array after swapping:", arr);
+
+//////////////////////////////////////////////////////////////////
+
+// What will happen if the condition in the if statement is not a boolean
+
+
+// Value	    Meaning
+// false	    Boolean false
+// 0	        Zero
+// ""	        Empty string
+// null	        Null
+// undefined	Undefined
+// NaN	        Not a number
+
+
+// if(){
+//     console.log("hello")
+// }
+
+/////////////////////////////////////////////////////////////////
+
+// Write an if statement to check if a variable is undefined.
+
+// let a ;
+// if(a == undefined){
+//     console.log(a, "is undefined")
+// }else{
+//     console.log(a, "is not undefined")
+// }
+
+//////////////////////////////////////////////////////////////////////
 
