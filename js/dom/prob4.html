@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="border: 5px solid red; padding: 20px">
+      <label>Enter your user name - </label>
+      <input
+        id="username"
+        type="text"
+        placeholder="enter your username"
+        value=""
+      />
+      <br /><br />
+      <label>Enter your password - </label>
+      <input id="password" type="password" placeholder="enter your username" />
+      <br /><br />
+      <label for="">Select your gender</label>
+      <select  id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <br><br>
+      <button id="btn" onclick="loginfun()">Login</button>
+    </div>
+<br><br>
+
+<div id="show" style="height: 300px; border: 5px solid green;">
+   <h1 id="name"></h1>
+   <h2 id="pass"></h2>
+   <h3 id="gen"></h3>
+</div>
+  </body>
+  <script>
+    let username = document.getElementById("username");
+    let password = document.getElementById("password");
+    let gender = document.getElementById("gender")
+    let name = document.getElementById("name")
+    let pass = document.getElementById("pass")
+    let gen = document.getElementById("gen")
+
+    // console.log(username,password)
+    //   console.log(username.value)
+    //   console.log(password.value)
+
+    function loginfun() {
+    //   console.log(username.value);
+    //   console.log(password.value);
+    //   console.log(gender.value)
+
+    name.innerText = "Username is -"+ username.value;
+    pass.innerText ="Password is - "+ password.value;
+    gen.innerText = gender.value
+    }
+  </script>
+</html>
