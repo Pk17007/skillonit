@@ -65,19 +65,16 @@
 ///////////////////////////////////////////////////////////////
 // Find the minimum number in an array
 
+// let arr = [10, 25, 5, 60, 15];
+// let min = arr[0]; 
 
+// for (let i = 1; i < arr.length; i++) {
+//   if (arr[i] < min) {
+//     min = arr[i];
+//   }
+// }
 
-
-
-
-
-
-
-
-
-
-
-
+// console.log("Minimum number is:", min);
 
 ////////////////////////////////////////////////////////////////
 // Swap the first and last element of an array.
