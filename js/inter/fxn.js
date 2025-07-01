@@ -131,6 +131,7 @@ function rmv0(arr){
         if(arr[i]==0){
                 count++;
             }
+        
     }
     // if(count>0){
     //     for(k=0;k<count;k++){
