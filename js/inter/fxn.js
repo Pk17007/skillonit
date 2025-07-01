@@ -82,3 +82,63 @@
 // common (A,B);
 
 //////////////////////////////////////////////////////
+//26. Create an array of strings and print each string's length.
+
+// a = ["avd","qwerty","dell","microsoft"]
+
+// function strlgt(arr){
+//     for(i=0;i<arr.length;i++){
+//         console.log(arr[i].length);   
+//     }
+// }
+// strlgt(a)
+
+////////////////////////////////////////////////////////////////
+//27. Check if an array is sorted in ascending order.
+
+// a = [1,2,4,2,34,23,12,33,4,2,1]
+// b =[1,2,4,6,8,9,10,23,45,56,]
+// function asc(arr){
+//     count =0;
+//     for(i=0;i<arr.length;i++){
+//         if(arr[i]>arr[i+1]){
+//             count++;
+//         }        
+//     }
+//     if(count == 0){
+//             console.log("Array is in ascending order");
+
+//     }else{ console.log("Array not is ascending order");}
+// }
+
+// asc(a);
+
+//////////////////////////////////////////////////////////////
+// //29. Remove all 0s from an array.
+
+a = [1,3,4,0,3,2,4,2,9]
+b = [0,4,3,2,0,1,0,23,0,34,23,0]
+count = 0;
+function rmv0(arr){
+    for(i=0;i<arr.length;i++){
+        for(j=0;j<arr.length-i-1;j++){
+            if(arr[j]>arr[j+1]){
+                let swap = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = swap;
+            }
+        }
+        if(arr[i]==0){
+                count++;
+            }
+    }
+    // if(count>0){
+    //     for(k=0;k<count;k++){
+    //        arr.shift();
+    //     }
+    // }
+    // console.log("New array is" ,arr);
+    console.log(count);
+    
+} 
+rmv0(b)
