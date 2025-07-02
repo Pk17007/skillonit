@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <input id="name" type="text" placeholder="Enter your Name">
+        <br><br>
+        <input id="pass" type="password" placeholder="Enter your Password">
+        <br><br>
+        <select id="gen" title="_">
+            <option value="">Choose Your gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <br><br>
+        <input type="submit" placeholder="Login" id="submit">
+    </form>
+    <br><br><br><br><br><br>
+    <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Password</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">     </tbody>
+    </table>
+    
+</body>
+<script>
+    let name = document.getElementById("name")
+    let pass = document.getElementById("pass")
+    let form = document.getElementById("form")
+    let gen = document.getElementById("gen")
+    let tbody = document.getElementById("tbody");
+    let arr = [{
+    }]
+    addEventListener("submit",loginfun)
+    function loginfun(){
+        // document.createElement("table")
+
+        event.preventDefault()
+        for(i=0;i<1;i++){
+            name.value = arr.push[i].name
+            pass.value = arr.push[i].pass
+            gen.value  = arr.push[i].gen
+        }
+        console.log(arr)
+    }
+
+
+
+
+</script>
+</html>

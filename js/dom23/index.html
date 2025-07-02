@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+
+    </div>
+        
+</body>
+<script>
+    
+    // let name = ["Raupli", "Vaibhav", "Gaurav", "Harsh", "Parth", "Amol"];
+    // let color = ["red","violet","blue","purple","green","orange"];
+    // let h1 = document.getElementById("head")
+    // for(i=0;i<name.length;i++){
+    //     let h2 = document.createElement("h2")
+    //     h2.innerText = name[i];
+    //     h2.style.color = color[i];
+    // }
+
+    let data = [
+        {
+            name : "abc",
+            color: "red",
+        },
+        {
+            name : "bac",
+            color: "blue",
+        },
+        {
+            name : "pow",
+            color: "yellowgreen",
+        },
+        {
+            name : "lok",
+            color: "black",
+        }
+    ]
+
+        function fun(){
+       
+
+        for(i=0;i<data.length;i++){
+             let x = document.createElement("h1")
+        let y = document.getElementsByTagName("h1")
+                x.innerText = data[i].name;
+                x.style.color = data[i].color;
+                main.append(x)
+        }
+        }
+
+console.log(fun())
+
+
+
+</script>
+</html>

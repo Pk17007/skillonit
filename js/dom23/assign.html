@@ -5,6 +5,57 @@
     <title>Document</title>
 </head>
 <body>
-    <form></form>
+    <h1 id="head"></h1>
+    <p></p>
 </body>
+<script>
+    head = document.getElementsByName("head")
+    para = document.getElementsByTagName("p")
+
+    let obj = [
+        {
+        name : "abc",
+        mob : 123 ,
+        pass : "23",
+        gender : "male"
+        },{
+        name : "bcd",
+        mob : 234 ,
+        pass : "34",
+        gender : "female"
+        },{
+        name : "cde",
+        mob : 345 ,
+        pass : "45",
+        gender : "male"
+        },{
+        name : "abgbc",
+        mob : 12376 ,
+        pass : "23",
+        gender : "male"
+        },{
+        name : "a23bc",
+        mob : 13323 ,
+        pass : "223",
+        gender : 'female'
+        },{
+        name : "abcxcrr",
+        mob : 34123 ,
+        pass : "23",
+        gender : 'male'
+        }
+    ]
+
+   for(i=0;i<obj.length;i++){
+     let x = document.createElement("div")
+        x.append(head,para)
+        head.innerText = obj[i].name
+        para.innerText = obj[i].mob
+        console.log(x)
+   }
+   
+
+</script>
+    
+
 </html>
