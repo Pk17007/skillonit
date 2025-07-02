@@ -19,7 +19,7 @@
         <input type="submit" placeholder="Login" id="submit">
     </form>
     <br><br><br><br><br><br>
-    <table>
+    <table border="1">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -27,7 +27,9 @@
                     <th>Gender</th>
                 </tr>
             </thead>
-            <tbody id="tbody">     </tbody>
+            <tbody id="tbody">
+                
+            </tbody>
     </table>
     
 </body>
@@ -37,18 +39,40 @@
     let form = document.getElementById("form")
     let gen = document.getElementById("gen")
     let tbody = document.getElementById("tbody");
-    let arr = [{
-    }]
+   
+    let arr = []
     addEventListener("submit",loginfun)
     function loginfun(){
         // document.createElement("table")
 
         event.preventDefault()
-        for(i=0;i<1;i++){
-            name.value = arr.push[i].name
-            pass.value = arr.push[i].pass
-            gen.value  = arr.push[i].gen
-        }
+        
+            let obj = {
+                name : name.value,
+                pass : pass.value,
+                gen : gen.value
+            }
+            arr.push(obj)
+            // This stores input in AN OBJ IN ARR
+            // pass.value = arr.push[i].pass
+            // gen.value  = arr.push[i].gen
+
+            tbody.innerHTML = "";
+            for(i=0;i<arr.length;i++){
+                
+                let row = document.createElement("tr")
+                let col1 = document.createElement("td")
+                col1.innerText = arr[i].name
+                let col2 = document.createElement("td")
+                col2.innerText = arr[i].pass
+                let col3 = document.createElement("td")
+                col3.innerText = arr[i].gen
+                row.append(col1,col2,col3)
+                tbody.append(row)
+                
+            }
+        // Value dalne ke bad append karna
+        
         console.log(arr)
     }
 
