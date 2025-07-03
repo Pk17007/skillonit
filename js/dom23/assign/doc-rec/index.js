@@ -1,6 +1,7 @@
 let form = document.querySelector("form")
 let name = document.getElementById("name")
 let id = document.getElementById("id")
+let exp = document.getElementById("exp")
 let tbody = document.querySelector("tbody")
 
 form.addEventListener("submit",submit)
@@ -27,12 +28,19 @@ function display(data){
         col2.innerText = el.id;
     let col3 = document.createElement("td")
          col3.innerText = el.specs;
+    let col4 = document.createElement("td")        
+        col4.innerText = "Delete"
+          col4.style.backgroundColor = "red"
+          col4.style.color = "white"
+          col4.style.fontSize = "24px"
+        
+        row.append(col1,col2,col3,col4);
+        tbody.append(row)
 
-        col3.innerText = "Delete"
-          col3.style.backgroundColor = "red"
-          col3.style.color = "white"
-          col3.style.fontSize = "24px"
-              col3.addEventListener("click", function(){
+        console.log(DocData);
+        
+
+              col4.addEventListener("click", function(){
                      delfun(index);
                       })
     })
