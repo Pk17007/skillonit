@@ -165,24 +165,23 @@ function grid(){
     investors.map(function(el,index){
 
         let box = document.createElement("div")
-        box.accessKey = index
         // dont know?
         let n = document.createElement("h4")
         n.innerText = el.name;
         let r = document.createElement("p")
         r.innerText = el.role;
         // img ke liye kya??
-        let img = document.createElement("img")
-        img.src = el.image
+        let im = document.createElement("img")
+        im.src= el.image;
         let c = document.createElement("img")
-        img.innerText = el.companyLogo
-        box.append(img,n,r,c)
-        body.append(index);
+        c.src = el.companyLogo;
+        box.append(im,n,r,c)
+        body.append(box);
 
     })
-
     
 }
+
 console.log(grid());
 
 
