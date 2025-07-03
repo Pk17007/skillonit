@@ -20,7 +20,24 @@ function submit(){
    dispaly(todo_data)
 }
     function dispaly(){
-        submit.map(el,index,arr){
-          console.log(index);
+      tbody.innerHTML = "";
+        submit.map(el,index){
+          let row = document.createElement("tr")
+
+          let col1 = document.createElement("td")
+          col1.innerText = el.task;
+          let col2 = document.createElement("td")
+          col2.innerText = el.priority;
+          let col3 = document.createElement("td")
+          row.append(col1,col2,col3)
+          tbody.appendChild(row)
+         col3.addEventListener("click", function(){
+              delfun(index);
+         })
+
         }
     }
+
+    // function delfun(){
+
+    // }
