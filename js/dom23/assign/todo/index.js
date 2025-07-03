@@ -9,8 +9,9 @@ let form = document.querySelector("form")
 form.addEventListener("submit",submit)
 
 let todo_data = []
+
 function submit(){
-    event.preventDefault;
+    event.preventDefault();
    let obj = {
      task:task.value,
      priority:priority.value
@@ -19,9 +20,9 @@ function submit(){
    console.log(todo_data);
    dispaly(todo_data)
 }
-    function dispaly(){
+    function dispaly(data){
       tbody.innerHTML = "";
-        submit.map(el,index){
+        data.map( function(el,index){
           let row = document.createElement("tr")
 
           let col1 = document.createElement("td")
@@ -31,13 +32,26 @@ function submit(){
           let col3 = document.createElement("td")
           row.append(col1,col2,col3)
           tbody.appendChild(row)
-         col3.addEventListener("click", function(){
-              delfun(index);
-         })
+            if(col2.innerText == "Low"){
+              col2.style.backgroundColor = "green"
+            }else if (col2.innerText == "High"){
+              col2.style.backgroundColor = "red"
+            }else{
+              col2.style.backgroundColor = "white"
+            }
+          col3.innerText = "Delete"
+          col3.style.backgroundColor = "red"
+          col3.style.color = "white"
+          col3.style.fontSize = "24px"
+              col3.addEventListener("click", function(){
+                     delfun(index);
+                      })
 
-        }
+        })
     }
-
-    // function delfun(){
-
-    // }
+function delfun(i){
+    // console.log(event)
+    // event.target.parentNode.remove()
+    todo_data.splice(i,1)
+    dispaly(todo_data)
+}
