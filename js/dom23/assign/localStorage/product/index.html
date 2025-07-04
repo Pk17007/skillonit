@@ -7,23 +7,44 @@
 <style>
     div>img{
         width: 100px;
+         border: 3px solid red;
+        margin-left: 80px;
+        margin-top: 10px;
         
     }
 
     div {
-        justify-items: center;
+        justify-content: center;
+        border: solid 2px blue;
+        padding: 10px;
+        /* align-content: space-between; */
     }
-
+    
     #container {
         display: grid;
         grid-template-columns: repeat(4,1fr);
         gap: 20px;
         width: 90%;
         margin: auto;
+        padding: 10px
     }
+    #nav {
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-around;
+    }
+    #nav>div:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: aliceblue;
+    }
+
 
 </style>
 <body>
+    <div id="nav"></div>
     <div id="container"> </div>
     
 </body>

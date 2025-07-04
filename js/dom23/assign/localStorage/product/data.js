@@ -272,6 +272,7 @@ let product = [
 //price
 // rating { rate count}
 //description
-//category
+//category -  "men's clothing"   "jewelery"   electronics  "women's clothing" 
+//  
 
 localStorage.setItem("data", JSON.stringify(product))
