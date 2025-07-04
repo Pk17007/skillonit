@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Doc-list</title>
+    <title>Emp-list</title>
    <link rel="stylesheet" href="./index.css">
   </head>
   <body>
     <!-- Dont make any changes here -->
-    <h1>Doc List</h1>
+    <h1>Employee Record</h1>
     
 
     <div>
@@ -17,20 +17,22 @@
       <form >
         <label >Name</label><br />
         <input id="name" type="text" placeholder="Enter Your Name" /><br />
-        <label >ID </label><br />
-        <input id="id" type="text" placeholder="Enter Your ID" /><br />
-        <label>Specialisation</label>
+        <label >Employee ID </label><br />
+        <input id="id" type="text" placeholder="Enter Your Employee ID" /><br />
+        <label>Department</label>
         <select title="_" id="specs" >
-          <option value="">Select Specialization</option>
-          <option value="Dermatologist">Dermatologist</option>
-          <option value="Dentist">Dentist</option>
-          <option value="Surgery">Surgery</option>
-          <option value="Neurology">Neurology</option>
+          <option value="">Select Department</option>
+          <option value="Front-End">Front-End</option>
+          <option value="Back-End">Back-End</option>
+          <option value="OPS">OPS</option>
+          <option value="HR">HR</option>
           <option value="Others">Others</option>  
           </select>
           <label>Experience</label>
           <input id="exp"  type="number"   placeholder="Enter Your Experience In Years">
           
+        <label >Email</label><br />
+        <input id="email" type="email" placeholder="Enter Your Email" /><br />
 
         <input type="submit" />
       </form>
@@ -41,9 +43,10 @@
           <tr>
             <th>Name</th>
             <th>ID</th>
-            <th>Specialization</th>
+            <th>Department</th>
             <th>Experience</th>
             <th>Role</th>
+            <th>Email</th>
             <th>Delete</th>
           </tr>
         </thead>

@@ -2,6 +2,7 @@ let form = document.querySelector("form")
 let name = document.getElementById("name")
 let id = document.getElementById("id")
 let exp = document.getElementById("exp")
+let email = document.getElementById("email")
 let role;
 let tbody = document.querySelector("tbody")
 
@@ -16,6 +17,7 @@ function submit(){
         id: id.value,
         specs:specs.value,
         exp:exp.value,
+        email:email.value
         // role:role.value
     }
     DocData.push(obj)
@@ -40,16 +42,18 @@ function display(data){
     let col5 = document.createElement("td")
     
             if(el.exp<=1 && el.exp>=0 ){
-                x ="Trainee"
+                x ="Fresher"
             }else if(el.exp<5 && el.exp>1){
                 x ="Junior"
             }else 
-            if(el.exp>=5 && el.exp<=40){
+            if(el.exp>=5 && el.exp<=30){
                 x ="Senior"
             }else{
                 x = "Error"
             }; 
             col5.innerText = x;
+    let col6 = document.createElement("td")
+         col6.innerText = el.email;
 
     let col7 = document.createElement("td")        
         col7.innerText = "Delete"
@@ -57,7 +61,7 @@ function display(data){
           col7.style.color = "white"
           col7.style.fontSize = "14px"
         
-        row.append(col1,col2,col3,col4,col5,col7);
+        row.append(col1,col2,col3,col4,col5,col6,col7);
         tbody.append(row)
 ///        
     

@@ -11,7 +11,8 @@
 <body>
     <div id="box">   
             <h1></h1>
-            <button> like Me</button>
+            <button> Like Me 👍</button>
+            <button id="dec">Reset ❌</button>
     </div>
     
 
@@ -20,15 +21,24 @@
 <script>
     let btn = document.querySelector("button") 
     let h1 = document.querySelector("h1")
+    let btn2 = document.getElementById("dec")
         btn.addEventListener("click", like)
-        count = "0" || localStorage.getItem("data") ;
-   h1.innerText = count;
+        btn2.addEventListener("click", dec)
+        count = "0" && localStorage.getItem("data") ;
+         h1.innerText = count;
     
     function like(){
         count++;
         h1.innerText = count;
         localStorage.setItem("data",count)
 
+    }
+
+    function dec(){
+        
+        count = 0;
+        reset = localStorage.setItem("data",count)   
+            h1.innerText = count;
     }
     
 
