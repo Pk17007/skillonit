@@ -1,0 +1,20 @@
+let form = document.getElementById("login")
+let email = document.getElementById("email")
+let username = document.getElementById("username")
+let password = document.getElementById("password")
+form.addEventListener("submit", signupfun)
+
+let signup_arr = JSON.parse(localStorage.getItem("signupdata"))|| []; 
+function signupfun(){
+    event.preventDefault();
+    // console.log("signup")
+    let obj = {
+        email:email.value,
+        username:username.value,
+        password:password.value
+    }
+    signup_arr.push(obj);
+    localStorage.setItem("signupdata",JSON.stringify(signup_arr))
+    console.log(signup_arr);
+    
+}
