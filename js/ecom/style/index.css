@@ -1,0 +1,39 @@
+.navbar { 
+    display: flex;
+    /* border: 3px solid blue; */
+}
+
+.logo>img{
+    width: 75px;
+}
+.logo{
+    /* border: 3px solid red; */
+    width: 15%;
+    height: 75px;
+    /* align-content: center; */
+    /* margin: auto; */
+}
+#list{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    /* border: 3px solid yellowgreen; */
+    align-items: center;
+}
+#list>li{
+    font-size: large;
+}
+#btn {
+    /* border: 4px dashed black; */
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: space-around;
+
+}
+#btn>li>a{
+    font-size: large;  
+    text-decoration: none; 
+    color: black; 
+    font-weight: bold;
+}
