@@ -8,7 +8,7 @@ form.addEventListener("submit",loginfun)
 
 function loginfun(){
     event.preventDefault();
-    console.log("submit")
+    // console.log("submit")
     for(i=0;i<signup_arr.length;i++){
         let usn = 0;
         let pas = 0;
@@ -19,12 +19,17 @@ function loginfun(){
                 pas++
             }
 
-        if(usn == 1 ){
+        if(usn == 0 ){
             alert("Wrong Username")
-        }else if (pas ==1){
+            console.log("wu")
+            break;
+        }else if (pas == 0){
             alert("Wrong Password")
+            console.log("wp");
+            break;
         }else{
             console.log("login successful");
+            break;
             
         }
     }
