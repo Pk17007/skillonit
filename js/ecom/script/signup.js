@@ -14,7 +14,10 @@ function signupfun(){
         password:password.value
     }
     signup_arr.push(obj);
-    localStorage.setItem("signupdata",JSON.stringify(signup_arr))
-    console.log(signup_arr);
     
+    localStorage.setItem("signupdata",JSON.stringify(signup_arr))
+    // console.log(signup_arr);
+    alert("Sign Up successfully")
+
+    window.location.href ="http://127.0.0.1:5500/js/ecom/html/login.html"
 }
