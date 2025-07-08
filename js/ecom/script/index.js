@@ -30,7 +30,8 @@ function grid(){
         addtocart.addEventListener("click", addedcart)
 
             function addedcart(){
-                    // console.log("added toc cart")
+                    if(account_loggedIn = true){
+                        // console.log("added toc cart")
                     alert("Added to Cart")
                     addtocart.innerText = "Go to Cart"
                     addtocart.style.backgroundColor = "yellowgreen"
@@ -43,6 +44,9 @@ function grid(){
                     cartdata.push(id)
                     JSON.stringify(localStorage.setItem("cdata",cartdata))
                     console.log("cdata")
+                    }else{
+                        window.location.href ="http://127.0.0.1:5500/js/ecom/html/login.html"
+                    }
 
                     
                     
