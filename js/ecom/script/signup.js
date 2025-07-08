@@ -2,6 +2,7 @@ let form = document.getElementById("login")
 let email = document.getElementById("email")
 let username = document.getElementById("username")
 let password = document.getElementById("password")
+let home = document.getElementById("home")
 form.addEventListener("submit", signupfun)
 
 let signup_arr = JSON.parse(localStorage.getItem("signupdata"))|| []; 
@@ -21,3 +22,20 @@ function signupfun(){
 
     window.location.href ="http://127.0.0.1:5500/js/ecom/html/login.html"
 }
+
+
+
+home.addEventListener("click",function(){
+    window.location.href = "http://127.0.0.1:5500/js/ecom/html/index.html"
+    
+})
+
+
+// home.addEventListener("mouseover",function(){
+//     home.style.backgroundColor = "grey"
+//     home.style.color = "white"
+// })
+// home.addEventListener("mouseout",function(){
+//     home.style.backgroundColor = "white"
+//     home.style.color = "black"
+// })

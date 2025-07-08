@@ -32,6 +32,7 @@
     height: 75px;
     /* align-content: center; */
     /* margin: auto; */
+    margin-left: 50px;
 }
 #list{
     display: flex;
@@ -39,4 +40,11 @@
     justify-content: space-around;
     /* border: 3px solid yellowgreen; */
     align-items: center;
+}
+#ud{
+    text-decoration: none;
+    color: black;
+}
+#ud:hover{
+    color: tomato;
 }

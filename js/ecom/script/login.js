@@ -1,12 +1,13 @@
-let form = document.getElementById("login")
+let form = document.querySelector("form")
 let username = document.getElementById("username")
 let password = document.getElementById("password")
-
+let home = document.getElementById("home")
 let btn = document.getElementById("btn")
+let navbar = document.getElementById("navbar")
 // let signup_arr = document.getElementById("signup_arr")
 let signup_arr = JSON.parse(localStorage.getItem("signupdata"));
 
-form.addEventListener("submit",loginfun)
+    form.addEventListener("submit",loginfun);
 
 function loginfun(){
     event.preventDefault();
@@ -34,7 +35,8 @@ function loginfun(){
                 let usn = document.createElement("h2");
                 usn.innerText = username.value;
 
-                btn.append(usn)
+                navbar.append(usn)
+                console.log(window);
 
                 window.location.href ="http://127.0.0.1:5500/js/ecom/html/index.html"
                 // loggedin();
@@ -44,6 +46,13 @@ function loginfun(){
 
     
 }
-console.log(window);
+
+
+home.addEventListener("click",function(){
+    window.location.href = "http://127.0.0.1:5500/js/ecom/html/index.html"
+})
+
+
+
 
 ///
