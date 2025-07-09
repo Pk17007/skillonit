@@ -32,18 +32,19 @@ function loginfun(){
             if(pas== 0){
                 alert("Wrong Password")
             }else{
-                alert("login Success")
+                // alert("login Success")
+
                 account_loggedIn = true;
                 let usn = document.createElement("h2");
                 usn.innerText = username.value;
-
-                navbar.append(usn)
-                console.log(window);
+                // set this usnername in local storage
+                localStorage.setItem("name1",usn.innerText)
+                // console.log(name)
+                
+                // console.log(window);
 
                 window.location.href ="http://127.0.0.1:5500/js/ecom/html/index.html"
-                let usndisp = document.createElement("h2")
-                usndisp.innerText = name
-                btn.append(usndisp)
+                
                 // loggedin();
                 
             }
