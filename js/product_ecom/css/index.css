@@ -1,44 +1,4 @@
-.navbar { 
-    display: flex;
-    /* border: 3px solid blue; */
-}
 
-.logo>img{
-    width: 75px;
-}
-.logo{
-    /* border: 3px solid red; */
-    width: 15%;
-    height: 75px;
-    margin-left: 50px;
-    /* align-content: center; */
-    /* margin: auto; */
-}
-#list{
-    display: flex;
-    width: 60%;
-    justify-content: space-around;
-    /* border: 3px solid yellowgreen; */
-    align-items: center;
-}
-#list>li{
-    font-size: large;
-}
-#btn {
-    /* border: 4px dashed black; */
-    display: flex;
-    width: 30%;
-    align-items: center;
-    justify-content: space-around;
-    text-decoration: none;
-
-}
-#btn>li>a{
-    font-size: large;  
-    text-decoration: none; 
-    color: black; 
-    font-weight: bold;
-}
 
 #main img{
     margin: auto;
@@ -57,9 +17,13 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
    display: flex;
    flex-direction: column;
-    height: 500px;
+    height: 600px;
     /* width: 20%; */
+    border-radius: 15px;
     padding: 15px;
+}
+#main>div:hover{
+    box-shadow: rgba(0.24, 0.16, 0.24, 0.16) 8px 5px 8px 5px;
 }
 #main button{
     width: 100px;
@@ -68,6 +32,5 @@
 #main button:hover{
     height: 30px;
     width: 105px;
-    color:white;
-    background-color: grey;
+    box-shadow: rgba(0,0, 0, 0.16) 2px 2px 2px 3px;
 }
