@@ -30,3 +30,8 @@
     color:white;
     background-color: grey;
 }
+
+#btn {
+    display: flex ;
+    gap: 20px;
+}

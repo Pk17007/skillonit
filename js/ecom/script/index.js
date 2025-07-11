@@ -3,6 +3,8 @@ let main = document.getElementById("main")
 // let cart = document.getElementById("cart")
 let btn = document.getElementById("btn")
 let cart = document.getElementById("cart")
+let lt = document.getElementById("logint")
+let st = document.getElementById("signupt")
 
 
 i=0
@@ -88,6 +90,15 @@ function gotocart(){
 
 // console.log(grid)
 //////////////////////////////////////////////////////////
+if (account_loggedIn = true){
+        lt.innerHTML = null;
+        lt.innerText = localStorage.getItem("name1") 
+        st.innerHTML = null;
+        let logout = document.createElement("a", addEventListener())
+        logout.innerText = "Logout"
+        logout.src = "../html/login.html"
+        st.append(logout)
+    }
  
 // if(localStorage.getItem("name1") !== null){
 //     let usndisp = document.createElement("h3")

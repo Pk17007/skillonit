@@ -22,11 +22,11 @@ function grid(arr){
 
         let plus = document.createElement("button")
         plus.innerText = "+";
-        plus1();
+        // plus1();
         
         let minus = document.createElement("button")
         minus.innerText = "-";
-        minus1();
+        // minus1();
 
         let title = document.createElement("h3")
         title.innerText = el.title
@@ -44,15 +44,15 @@ function grid(arr){
 grid(c_data);
 
 
-function plus1(){
-    addEventListener("click", function(){
-        quantity++;
+// function plus1(){
+//     addEventListener("click", function(){
+//         quantity++;
         
-    })
-}
-function minus1(){
-    addEventListener("click", function(){
-        quantity--;
+//     })
+// }
+// function minus1(){
+//     addEventListener("click", function(){
+//         quantity--;
         
-    })
-}
+//     })
+// }
