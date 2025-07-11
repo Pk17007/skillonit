@@ -1,0 +1,28 @@
+#main1 {
+    width: 90%;
+    margin: auto;    
+}
+
+#main>div{
+    width: 90%;
+    margin: auto;
+    border: 2px solid black;
+    padding: 20px;
+    height: 250px;
+}
+
+#main>div>img{
+    
+    margin: auto;
+    width: 100px;
+    
+}
+#main>#total {
+    width: 300px;
+    height: 100px;
+    position: sticky;
+    top: 300px;
+    left: 500px;
+    border: 3px solid yellowgreen;
+    background-color: gray;
+}
