@@ -25,10 +25,13 @@ if(signup_data == []){
     if( usn == true ){
         if(pass == true){
             alert("Login Success")
-            let logged_user = {
-                username:username.value
-            }
-        localStorage.setItem("login_data",JSON.stringify(logged_user))    
+            let logged_user = username.value;
+           
+            
+        localStorage.setItem("login_data",logged_user)
+//  not working
+             window.location.href ="http://127.0.0.1:5500/js/product_ecom/html/index.html";
+        
         }else{
             alert("Wrong Password")
         }
@@ -37,3 +40,5 @@ if(signup_data == []){
     }
     })
 }
+
+
