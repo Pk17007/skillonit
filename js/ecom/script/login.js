@@ -1,13 +1,12 @@
-let form = document.querySelector("form")
+let form1 = document.querySelector("form")
 let username = document.getElementById("username")
 let password = document.getElementById("password")
 let home = document.getElementById("home")
-let btn = document.getElementById("btn")
+let btn1 = document.getElementById("btn")
 let navbar = document.getElementById("navbar")
 // let signup_arr = document.getElementById("signup_arr")
 let signup_arr = JSON.parse(localStorage.getItem("signupdata"));
 
-    form.addEventListener("submit",loginfun);
 let account_loggedIn = false;
 function loginfun(){
     event.preventDefault();
@@ -45,6 +44,7 @@ function loginfun(){
 
                 window.location.href ="http://127.0.0.1:5500/js/ecom/html/index.html"
                 
+                
                 // loggedin();
                 
             }
@@ -54,9 +54,14 @@ function loginfun(){
 }
 
 
+    form1.addEventListener("submit",loginfun);
+
+
 home.addEventListener("click",function(){
     window.location.href = "http://127.0.0.1:5500/js/ecom/html/index.html"
 })
+
+
 
 
 
