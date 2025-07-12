@@ -24,7 +24,7 @@ function display (arr){
         prod_price.innerText = `$ ${el.price} \n\n ⭐${el.rating.rate} (${el.rating.count})`
 
         let add_to_cart_btn = document.createElement("button")
-        add_to_cart_btn.innerText = "Add To Cart"
+        add_to_cart_btn.innerText = "Add To Cart";
 
         add_to_cart_btn.addEventListener("click",function(){
             if(JSON.parse(localStorage.getItem("login_data") == null)){
