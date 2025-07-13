@@ -26,29 +26,50 @@ function display (arr){
         let add_to_cart_btn = document.createElement("button")
         add_to_cart_btn.innerText = "Add To Cart";
 
-        add_to_cart_btn.addEventListener("click",function(){
-            if(JSON.parse(localStorage.getItem("login_data") == null)){
         
-        // alert("Not Logged In");
+
+        var isInCart = false;
+
+         for(l=0;l<cart_data.length;l++){
+                    if(el.id == cart_data[l].id){
+                        add_to_cart_btn.innerText = "Go to Cart"
+                        add_to_cart_btn.style.backgroundColor = "lightgreen"
+                        isInCart = true;
+                         break;                       
+                        
+                   }
+                }
+
+    //     
+
+        add_to_cart_btn.addEventListener("click",function(){
+            if(localStorage.getItem("login_data") == null){
+        
+        alert("Not Logged In");
                 window.location.href = "http://127.0.0.1:5500/js/product_ecom/html/login.html"
         
             }else{
-                for(l=0;l<cart_data.length;l++){
-                    if(el.id == cart_data[l].id){
-                        add_to_cart_btn.innerText = "Go to Cart"
-                        add_to_cart_btn.addEventListener("click",function(){
-                            window.location.href = "http://127.0.0.1:5500/js/product_ecom/html/cart.html"})
                 
-                        
-                   }else
-                   {
+               
+                if (isInCart == false){
                     cart_data.push(el);
                     localStorage.setItem("cart_data",JSON.stringify(cart_data))
-                   }
-
+                    add_to_cart_btn.innerText = "Go to Cart";
+                    console.log("el pushed");
+                    
                 }
+                
             }
         })
+
+        if(isInCart == true){
+            
+            addEventListener("click",function(){
+               this.window.location.href = "http://127.0.0.1:5500/js/product_ecom/html/cart.html"
+               console.log("CArt page not open");
+               
+            })
+        }
 
         
         // let add_to_cart_btn = document.createElement("button")
@@ -62,6 +83,12 @@ function display (arr){
            
         //                 })
 // }
+
+
+
+
+
+
 
     })
 

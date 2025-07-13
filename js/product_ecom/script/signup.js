@@ -19,8 +19,8 @@ form.addEventListener("submit",function(){
     // stored signup data..
     alert("signup success")
     
-    // window.location.href = "http://127.0.0.1:5500/js/product_ecom/html/login.html"
-
+    window.baseU.href = "http://127.0.0.1:5500/js/product_ecom/html/login.html"
+    
 })
 
 // form.submit.target = "http://127.0.0.1:5500/js/product_ecom/html/login.html";
