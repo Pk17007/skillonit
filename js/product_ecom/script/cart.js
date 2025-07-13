@@ -1,12 +1,12 @@
-let cart_ = JSON.parse(localStorage.getItem("cart_data"))
+let cart_1 = JSON.parse(localStorage.getItem("cart_data"))
 let main = document.getElementById("main")
 let Total = document.getElementById("Total")
 let total = document.getElementById("total")
 
 
-function display (arr){
+function display (arr1){
     let count= 0;
-    arr.map(function (el){
+    arr1.map(function (el){
         let prod_box = document.createElement("div")
 
         let prod_img = document.createElement("img")
@@ -51,4 +51,4 @@ function display (arr){
 
 
 
-display(cart_);
+display(cart_1);
