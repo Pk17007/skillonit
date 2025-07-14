@@ -10,7 +10,7 @@
     <div>
         <div class="navbar">
                 <div class="logo">
-                <img src="https://media.istockphoto.com/id/1079804618/vector/shopping-cart-black-icon-on-white-background-vector-illustration-for-website-mobile.jpg?s=612x612&w=0&k=20&c=JSrnFX65zYzQi8EZ3gbcQzNprEcMHK8z5t7kdnTWHQY=" alt="logo">
+                <img id="fk" src="https://media.istockphoto.com/id/1079804618/vector/shopping-cart-black-icon-on-white-background-vector-illustration-for-website-mobile.jpg?s=612x612&w=0&k=20&c=JSrnFX65zYzQi8EZ3gbcQzNprEcMHK8z5t7kdnTWHQY=" alt="logo">
                 </div>
 
                 <ul id="list">
@@ -41,5 +41,11 @@
 <script src="../script/index.js"></script>
 <script src="../script/data.js"></script>
 <!-- <script src="../script/login.js"></script> -->
+ <script>
+    let fk = document.getElementById("fk")
+    fk.addEventListener("click", function(){
+        window.location.href = "https://www.flipkart.com/"
+    })
+ </script>
 
 </html>
