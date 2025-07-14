@@ -33,8 +33,20 @@
     text-decoration: none;
 
 }
-#btn>li>a{
+#list>li>a{
     font-size: large;  
+    text-decoration: none; 
+    color: black; 
+    /* font-weight: ; */
+}
+#list>li>a:hover{
+    color: blue;
+    
+    /* font-weight: 700; */
+}
+
+#btn>li>a{
+font-size: large;  
     text-decoration: none; 
     color: black; 
     font-weight: bold;

@@ -20,17 +20,18 @@
     padding-left:40px;
     /* border: 3px solid red; */
 }
-#total>h3{
+#total{
     align-content: center;
     text-align: center;
     background-color: wheat;
     /* border: yellow solid 2px; */
-    width: 200px;
-    height: 120px;
-    position: fixed;
+    width: 120px;
+    height: 30px;
+/*    
     top: 150px;
-    left: 800px;
+    left: 800px; */
        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+       margin: auto;
 }
 
 #main>div>div:nth-child(4){
@@ -41,4 +42,40 @@
 #main>div>div:nth-child(4)>button{
     width: 40px;
     height: 30px;
+}
+
+#Total{
+    border: 2px solid red;
+    width: 200px;
+    height: 70px;
+    position: fixed;
+    top: 150px;
+    left: 800px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    gap: 10px;
+    align-content: space-evenly;
+    background-color: wheat;
+    padding: 20px;
+   
+}
+#pay {
+    top: 350px;
+    height: 30px;
+    width: 50px;
+    align-self: baseline;
+    justify-self: end;
+    border: 0;
+    border-radius: 5px;
+}
+#pay:hover{
+    background-color: lightgreen;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+#Total>button{
+
+      align-self: flex-end;
+    justify-self: end;
+    z-index: 5;
 }

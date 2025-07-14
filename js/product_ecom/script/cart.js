@@ -3,6 +3,7 @@ let main = document.getElementById("main")
 let cart = document.getElementById("cart")
 let Total = document.getElementById("Total")
 let total = document.getElementById("total")
+let pay = document.getElementById("pay")
 
 
 cart_1.forEach(function(el) {
@@ -49,6 +50,7 @@ function display (arr1){
             item_count.innerText = quantity;
             update();
             plus.innerText = "➕";
+            
         })
         let minus = document.createElement("button")
         minus.innerText = "➖";
@@ -63,6 +65,14 @@ function display (arr1){
                 minus.innerText = "➖";
             }
         })
+
+
+        // add quantity key in obj cart_data
+            //cart_1.quantity = quantity;
+        
+
+
+
         // count_total = count_total + (el.price)*quantity
         // total.innerText = `Total Price: $ ${count}`;
 
@@ -84,6 +94,10 @@ function update(){
          Total1 = Total1 + span1
     });
      total.innerText = `Total: $ ${Total1}`;
+
+     final_total = Total1;
+     localStorage.setItem("final_total",final_total)
+
 }
 // total.innerText = `Total :${el.price + count  }`
 update();
@@ -91,3 +105,12 @@ update();
 cart.innerText =   `Cart(${cart_1.length})`
 
 display(cart_1);
+
+
+
+
+
+//////
+pay.addEventListener("click",function(){
+    window.location.href = "http://127.0.0.1:5500/js/product_ecom/html/pay.html"
+})
