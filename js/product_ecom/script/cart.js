@@ -4,6 +4,13 @@ let Total = document.getElementById("Total")
 let total = document.getElementById("total")
 
 
+cart_1.forEach(function(el) {
+    if (!el.current_item_count){
+        el.current_item_count = 1;
+    }
+});
+
+
 function display (arr1){
     let count= 0;
     arr1.map(function (el){
@@ -14,10 +21,14 @@ function display (arr1){
 
         let prod_title = document.createElement("p")
         prod_title.innerText = el.title;
+        
+        let quantity = el.current_item_count || 1; 
 
-        let item_count = document.createElement("h4")
+        let item_count = document.createElement("span")
+        item_count.innerText = quantity
         item_count.innerText = 1;
 
+        
 
         let prod_price = document.createElement("h4")
         prod_price.innerText = `$ ${Math.floor(el.price)}`
@@ -30,12 +41,24 @@ function display (arr1){
         let plus = document.createElement("button")
         plus.innerText = "➕";
         plus.addEventListener("click",function(){
-            item_count++;
+            quantity++;
+            el.current_item_count = quantity;
+            prod_price.innerText = `Price : $${Math.floor(el.price* quantity)}`
+            item_count.innerText = quantity;
+            update();
+            plus.innerText = "➕";
         })
         let minus = document.createElement("button")
         minus.innerText = "➖";
         minus.addEventListener("click",function(){
-            item_count--;
+            if(quantity>1){
+                quantity--;
+                el.current_item_count = quantity;
+            prod_price.innerText = `Price : $${Math.floor(el.price* quantity)}`
+            item_count.innerText = quantity;
+                update();
+                minus.innerText = "➖";
+            }
         })
 
         let controls = document.createElement("div")
@@ -45,6 +68,15 @@ function display (arr1){
          main.append(prod_box)
     })
 
+}
+
+function update(){
+    let Total1 = 0;
+   cart_1.forEach(function(el){
+        Total1+=Math.floor(el.price)*(el.current_item_count)
+    });
+     total.innerText = `Total Price: $ ${Total1}`;
+    localStorage.setItem("cart_data", JSON.stringify(cart_1)); 
 }
 // total.innerText = `Total :${el.price + count  }`
 

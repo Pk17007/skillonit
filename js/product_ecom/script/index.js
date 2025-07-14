@@ -8,7 +8,7 @@ let cart_data = JSON.parse(localStorage.getItem("cart_data")) || []
 let cartdisp = document.getElementById("cartdisp")
 
 
-
+var isInCart = false;
 // console.log(data);
 //  checking data 
 display(data);
@@ -30,52 +30,47 @@ function display (arr){
 
         // let quantity = el.quantity;
         
-         var isInCart = false;
-
-         for(l=0;l<cart_data.length;l++){
-                    if(el.id == cart_data[l].id){
-                        add_to_cart_btn.innerText = "Go to Cart"
-                        add_to_cart_btn.style.backgroundColor = "lightgreen"
-                        isInCart = true;
-                         break;                       
-                        
-                   }
+         add_to_cart_btn.addEventListener("click", function(){
+            let isInCart  =  false;
+            for(let l= 0 ; l<cart_data.length;l++){
+                if(cart_data[l].id == el.id){
+                    isInCart = true;
+                    break;
                 }
+            }
+
+            if(isInCart == true){
+                window.location.href ="cart.html"
+            }else{
+                cart_data.push(el)
+                localStorage.setItem("cart_data",JSON.stringify(cart_data))
+                alert("product is added!")
+                add_to_cart_btn.innerText = "Go to Cart"
+                add_to_cart_btn.style.backgroundColor = "lightgreen"
+            }
+         })
+         add_to_cart_btn.innerText = "Add to Cart";
+
+    let isInCart = false;
+    for (let i = 0; i < cart_data.length; i++) {
+      if (cart_data[i].id === el.id) {
+        isInCart = true;
+        break;
+      }
+    }
+
+    if (isInCart) {
+      add_to_cart_btn.innerText = "Go to Cart";
+      add_to_cart_btn.style.backgroundColor = "lightgreen"
+
+    }
+         
 
     //   Cart mein jo el he uska add_cart_btn pe tect go to cart hoga;;;
         
 
 
-        add_to_cart_btn.addEventListener("click",function(){
-            if(localStorage.getItem("login_data") == null){
-                alert("Not Logged In");
-                window.location.href = "http://127.0.0.1:5500/js/product_ecom/html/login.html"
-        
-            }else{
-                if (isInCart == false){
-                    cart_data.push(el);
-                    localStorage.setItem("cart_data",JSON.stringify(cart_data))
-                    add_to_cart_btn.innerText = "Go to Cart";
-                    add_to_cart_btn.style.backgroundColor = "lightgreen"
-                    console.log("el pushed");
-                    
-                }else{
-               
-        }
-                
-            }
-        })
-
-        if(isInCart && add_to_cart_btn.innerText == "Go to Cart"){
-            add_to_cart_btn.addEventListener("click",function(){
-                window.location.href = "http://127.0.0.1:5500/js/product_ecom/html/cart.html"
-            console.log("Cart page not open");
-            })
-        }
-               
-               
-           
-        
+       
         // let add_to_cart_btn = document.createElement("button")
         // isItINCart();
 
@@ -100,19 +95,16 @@ function display (arr){
    
 }
 
+
+
 ///
 
 ///////
 
-
-
-
-
-
                 lil.innerHTML = null;
-                let obj = localStorage.getItem("login_data");
+                
                 let name = document.createElement("h3")
-                name.innerText =    ` hi! ${obj}`;
+                name.innerText =    ` hi! ${JSON.parse(localStorage.getItem("login_data"))}`;
                 name.style.color = "orange"
                 lil.append(name)
                 

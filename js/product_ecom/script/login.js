@@ -28,7 +28,7 @@ if(signup_data == []){
             let logged_user = username.value;
            
             
-        localStorage.setItem("login_data",logged_user)
+        localStorage.setItem("login_data",JSON.stringify( logged_user))
 //  not working
              window.location.href ="http://127.0.0.1:5500/js/product_ecom/html/index.html";
         
