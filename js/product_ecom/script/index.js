@@ -6,7 +6,8 @@ let lil = document.getElementById("lil")
 let cart_data = JSON.parse(localStorage.getItem("cart_data")) || []
 
 let cartdisp = document.getElementById("cartdisp")
-
+let cart = document.getElementById("cart")
+cart.innerText = `Cart(${cart_data.length})`
 
 var isInCart = false;
 // console.log(data);
@@ -104,7 +105,7 @@ function display (arr){
                 lil.innerHTML = null;
                 
                 let name = document.createElement("h3")
-                name.innerText =    ` hi! ${JSON.parse(localStorage.getItem("login_data"))}`;
+                name.innerText = ` hi! ${localStorage.getItem("login_data")}`;
                 name.style.color = "orange"
                 lil.append(name)
                 
