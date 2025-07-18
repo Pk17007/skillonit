@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./admin.css">
+<body>
+    <h1><center>Admin Panel</center></h1>
+    <form>
+            <label for="name">Product Name</label>
+            <br>
+            <input id="name" placeholder="Enter product name" type="text">
+            <br>
+            <label for="category">Category</label>
+            <br>
+            <input id="category" placeholder="Enter category" type="text">
+            <br>
+            <label for="image">Image src</label>
+            <br>
+            <input id="image" placeholder="Enter img src" type="text">
+            <br>
+            <label for="price">Price</label>
+            <br>
+            <input id="price"  type="number">
+            <br>
+            <label for="gender">Gender</label>
+            <br>
+                <select name="--Select gender--" id="gender">
+                    <option value="0">--Select gender--</option>
+                    <option value="1">Men</option>
+                    <option value="2">Women</option>
+                </select>
+            <br>
+            <label for="sold">Sold</label>
+            <input id="sold" onchange="value_cng()" placeholder="Sold" value="false" type="checkbox">
+            <br><br><br>
+
+            <button id="add" type="submit">Submit</button>
+
+    </form>
+</body>
+<script src="./admin.js"></script>
+<script>
+    function value_cng(){
+        document.getElementById("sold")
+        sold.value = true;
+    }
+</script>
+</html>
