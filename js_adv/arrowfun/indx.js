@@ -15,34 +15,35 @@ let username = document.getElementById("usn")
 let main = document.getElementById("main")
 
 const abc =(get_pass,get_usn)=>{
-    event.preventDefault()
+    event.preventDefault();
     usn = "asd";
     pass = 123;
     if( usn == get_usn){
         if(pass == get_pass){
             console.log("Login");
-            main.innerHTML = "";
-            let gif = document.createElement("iframe")
-            gif.src = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fin.pinterest.com%2Fpin%2Fsuccess-gif-share-and-celebrate-your-achievements--617204323945105542%2F&psig=AOvVaw2KVBw_IMLYKnlryCJ2EWue&ust=1753083903250000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKipycT4yo4DFQAAAAAdAAAAABAE"
+            main.removeChild
+            main.innerHTML = null;
+            let gif = document.createElement("img")
+            gif.src = "https://i.pinimg.com/originals/4a/10/e3/4a10e39ee8325a06daf00881ac321b2f.gif"
             main.append(gif)
         }else{
             console.log("Wrong Password");
-            main.innerHTML = "";
-            let gif = document.createElement("iframe")
-            gif.src = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fnrifuture.com%2Fpayment-failure%2F&psig=AOvVaw06FRjL1j_rt3uztoyEY45n&ust=1753083965676000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMD42N_4yo4DFQAAAAAdAAAAABAK"
+            main.innerHTML = null;
+            let gif = document.createElement("img")
+            gif.src = "https://cdn.dribbble.com/userupload/20873319/file/original-985de1f42024ab56ee5a7d95c6f0ca83.gif"
             main.append(gif)
         }
     }else{
         console.log("Wrong Cred");
-        main.innerHTML = "";
-        let gif = document.createElement("iframe")
-        gif.src = "https://www.google.com/url?sa=i&url=https%3A%2F%2Flordicon.com%2Ficons%2Fwired%2Fflat%2F38-error-cross-simple&psig=AOvVaw0zUkXB49PkbbY3oK5b1lin&ust=1753084000921000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMj2jO_4yo4DFQAAAAAdAAAAABAE"
+        main.innerHTML = null;
+        let gif = document.createElement("img")
+        gif.src = "https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUyeGN1bWU3ODJzYW12bjY5NGVqM2VmYmF4YXAxNzQ2bzRyYWkwMnpoeiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vyTnNTrs3wqQ0UIvwE/source.gif"
         main.append(gif)
     }
 }
 function loginfun(){
-    setTimeout(abc(password.value,username.value),200)
-    let gif = document.createElement("iframe")
+    setTimeout(abc(password.value,username.value),2000)
+    let gif = document.createElement("img")
     gif.src = "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif"
     main.append(gif)
 }
