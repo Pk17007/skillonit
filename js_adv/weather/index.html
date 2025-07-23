@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #main>iframe{
+        width: 560px;
+        height: 350px;
+    }
+    #main{
+        width: 90%;
+        margin: auto;
+        margin-top: 40px;
+        /* border: 3px solid green; */
+        
+    }
+    #city{
+        margin: 10px 30px 10px 30px ;
+    }
+    label{
+        font-size: larger;
+        margin-left: 30px;
+        
+    }
+    #btn{
+        margin-left: 30px;
+    }
+    button:hover{
+        background-color: rgb(226, 181, 248);
+        border: none;
+
+        /* color: white; */
+    }
+    body{
+        background-color: aliceblue;
+    }
+    
+    input{
+        padding: 10px;
+        background-color: aliceblue;
+    }
+    table{
+        width: 90%;
+    }
+    thead{
+        background-color: rgb(0, 65, 129);
+        color: aliceblue;
+        
+        padding: 10px;
+        font-size: 25px;
+    }
+    th{
+         border-radius: 5px 5px 0px 0px ;
+    }
+    td{
+        /* align-items: center;
+         */
+         /* align-content: center; */
+        text-align: center;
+        /* border: 2px dashed yellowgreen; */
+        border: 0.3px solid ;
+        border-radius: 0px 0px 5px 5px;
+        width: 15%;
+    }
+   iframe{
+    align-self: flex-end;
+    margin-top: 20px;
+   }
+#input{
+    /* border: 3px solid red; */
+    width: 270px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #d7d7ff;
+}
+
+   
+</style>
+<body>
+   <div id="input">
+     <label for="city">City Name</label><br>
+    <input type="text" placeholder="Enter City Name"  id="city"><br>
+    <button id="btn" onclick="any()"> Show Weather</button>
+    <button id="btn1" onclick="any1()"> Show Details</button>
+   </div>
+    <div id="main">
+        <h1 id="heading"></h1>
+    </div>
+
+    
+</body>
+<script src="./index.js"></script>
+</html>

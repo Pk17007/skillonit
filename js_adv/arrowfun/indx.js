@@ -15,7 +15,7 @@ let username = document.getElementById("usn")
 let main = document.getElementById("main")
 
 const abc =(get_pass,get_usn)=>{
-    event.preventDefault();
+    
     usn = "asd";
     pass = 123;
     if( usn == get_usn){
@@ -42,13 +42,19 @@ const abc =(get_pass,get_usn)=>{
     }
 }
 function loginfun(){
-    setTimeout(abc(password.value,username.value),2000)
+    event.preventDefault();
+    console.log("loginfun")
     let gif = document.createElement("img")
     gif.src = "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif"
     main.append(gif)
+   
+   
+    setTimeout(function (){
+        abc(password.value,username.value)
+         
+    },2000)
+   
 }
-
-
 
 
 
