@@ -30,7 +30,7 @@ if(signup_data == []){
             
         localStorage.setItem("login_data",JSON.stringify( logged_user))
 //  not working
-             window.location.href ="http://127.0.0.1:5500/js/product_ecom/html/index.html";
+             window.location.href ="http://127.0.0.1:5500/product_ecom/html/index.html";
         
         }else{
             alert("Wrong Password")
