@@ -1,11 +1,25 @@
-let a = 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=rrr&key=AIzaSyCiby7Zkt8gKme9BkQVZgGbP35nG6X7hCw'
-
+let a = 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&q='
+let b = "&key=AIzaSyCiby7Zkt8gKme9BkQVZgGbP35nG6X7hCw"
+  let search = document.querySelector("input")
 const abc = async()=>{
-   let x = await fetch(a)
+   let x = await fetch(`${a}${search.value}${b}`)
    let data = await x.json()
-   console.log(data);
+   let w = data.items
    
+   console.log(w);
+   // display(data)
+}
+
+
+
+
+const inputfun = () =>{
+   setTimeout(abc,500)
 
 }
 
-abc()
+// const display = ()=>[
+//    obj.map((el){
+
+//    })
+// ]
