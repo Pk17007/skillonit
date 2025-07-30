@@ -18,14 +18,20 @@ function submit(){
         exp:exp.value,
         // role:role.value
     }
-    DocData.push(obj)
-    // localStorage.setItem("data",JSON.stringify(obj))
-    display(DocData)
+    
+    // let z = localStorage.getItem("data") || "";
+    DocData.push(obj);
+    display()
     console.log(DocData);
+    localStorage.setItem("Doc_data",JSON.stringify(DocData))
     
 }
 
-function display(data){
+display(localStorage.getItem("Doc_data"));
+ 
+
+function display(){
+    let data = localStorage.getItem("Doc_data") || "";
     tbody.innerHTML = null;
     data.map(function (el,index){    
     let row = document.createElement("tr")

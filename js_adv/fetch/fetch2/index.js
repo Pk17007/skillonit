@@ -2,6 +2,8 @@ let container = document.getElementById("container")
 
 let api = "https://fakestoreapi.com/products";
 
+// extracting data from api
+
 function get_data(){
     x = fetch(api)
     // console.log(x);  // retursm promise
@@ -19,6 +21,7 @@ function get_data(){
 
 get_data()
 
+// mapping the data  for use
 
 const display_data = (data) => {
     data.map(({title,id,image,price,description})=>{

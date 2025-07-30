@@ -2,11 +2,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Yourtube</title>
 </head>
+<style>
+    #main{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        margin-top: 20px ;
+    }
+    #main>div{
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        height: 360px;
+       margin-bottom: 10px;
+    }
+    #main>div>iframe{
+        width: 90%;
+        height: 250px;
+        margin: auto;
+        border-radius: 12px;
+
+    }
+    #main>div>h3{
+        width: 80%;
+        margin: auto;
+        margin-top: 8px;
+    }
+    #head{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    
+    }
+    #nav{
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid red; */
+       
+    }
+    .darkmode{
+        color: white;
+        background-color: black;
+        
+    }
+    
+    #nav>input{
+        height: 60px;
+        width: 500px;
+        border-radius:30px 0px  0px 30px ;
+        /* text-align: center; */
+        font-size: large;
+        padding: 10px 30px;
+    }
+    #nav>button{
+        height: 60px;
+        border-radius: 0px 30px 30px 0px ;
+        font-size: 15px;
+        padding: 10px ;
+    }
+    #dm_btn{
+        border-radius: 30px;
+    }
+    #nav>button:hover{
+        background-color: rgb(221, 220, 220);
+        font-size: 16px;
+    }
+
+</style>
 <body>
-    <h1>YourTube</h1>
-    <input oninput="inputfun()" id="search_input" type="text"  placeholder="Search anything">
+    <div id="head">
+        <p>YourTube</p>
+         <center>
+            <div id="nav">
+                 <input  id="search_input" type="text"  placeholder="Search anything">
+                 <button id="btn" onclick="inputfun()"> Search 🔎</button>
+             </div>
+         </center>
+         <button id="dm_btn" onclick="darkmode()">Dark Mode</button>
+    </div>
     <div id="main"> </div>
 </body>
 <script src="./index.js"></script>
