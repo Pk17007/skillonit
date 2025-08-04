@@ -19,9 +19,9 @@ async function fetch(){
 fetch()
 
 
-const data_map=(data)=>{
-    data.map((el)=>{
-        let p = document.createElement("p")
-        p.innerText = el.title
-    })
-}
+// const data_map=(data)=>{
+//     data.map((el)=>{
+//         let p = document.createElement("p")
+//         p.innerText = el.title
+//     })
+// }
