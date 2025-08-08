@@ -1,0 +1,80 @@
+/* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Style the navbar container */
+        nav {
+            background-color: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+
+        /* Style the site title/logo */
+        .logo {
+            color: #fff;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Style the menu */
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* Style the links */
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 40px;
+            padding: 8px 12px;
+            transition: background-color 0.3s;
+        }
+
+        /* Hover effect for links */
+        .menu a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
+
+        /* Responsive: hide menu on small screens */
+        @media (max-width: 768px) {
+            .menu {
+                display: none;
+                flex-direction: column;
+                background-color: #333;
+                /* position: absolute; */
+                top: 60px;
+                right: 20px;
+                width: 200px;
+                padding: 10px;
+            }
+
+            /* Show menu when active (optional for toggle button) */
+            .menu.show {
+                display: flex;
+            }
+
+            /* Hamburger menu button */
+            .menu-toggle {
+                display: block;
+                cursor: pointer;
+                font-size: 1.5em;
+                color: #fff;
+            }
+        }
+
+        /* Hide hamburger on larger screens */
+        @media (min-width: 769px) {
+            .menu-toggle {
+                display: none;
+            }
+        }

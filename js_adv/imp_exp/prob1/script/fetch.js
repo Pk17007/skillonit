@@ -1,27 +1,20 @@
-let api = "https://fakestoreapi.com/products"
-// const api2 = "https://jsonplaceholder.typicode.com/photos";
+import product from "./data";
+
+let main = document.getElementById("main")
 
 
-async function fetch(){
-    try {
-        let res = await fetch(api) 
-    let x = await res.json()
-       console.log(x);
 
-    data_map(x)
-        
-    } catch (error) {
-        console.log("err")
-      
-    }
+ let abc = product();
+//   console.log(abc);
+
+function data(){
+    abc.forEach( function(el){
+        let text = document.createElement('h4')
+        text.innerText = el.title;
+        console.log(`${el.id}`)
+
+        main.append(text)
+    })
 }
 
-fetch()
-
-
-// const data_map=(data)=>{
-//     data.map((el)=>{
-//         let p = document.createElement("p")
-//         p.innerText = el.title
-//     })
-// }
+data()
