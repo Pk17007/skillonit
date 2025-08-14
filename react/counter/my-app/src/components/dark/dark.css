@@ -1,0 +1,6 @@
+@import "tailwindcss";
+/* @custom-variant dark (&:where(.dark, .dark *)); */
+/* @custom-variant dark (&:where(.dark, .dark *));// for dark mode??/ */
+
+
+/* font-family: var(--font-mono); ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace */
