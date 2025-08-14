@@ -4,7 +4,7 @@ const Todo=()=>{
 
     const [ text , setText] = useState("")
     const [ data, setData] = useState([])
-
+    
     const addfunc=()=>{
 
        let  newObj = {
@@ -13,9 +13,20 @@ const Todo=()=>{
             id: Math.floor(Math.random(111)*1000)
        } 
 
-       setData([...data,newObj])
-    console.log(data)
+       setData([...data,newObj])   
+         console.log(data) 
     }
+
+       const compfun=(id)=>{
+        // console.log(id);
+        
+            data.map((el)=>
+               el.id === id ? el.status = true : el.status = false
+            )
+       setData(data)
+        
+       }
+
         return(
             <div className="w-9/10 bg-sky-400 m-auto mt-8 rounded-2xl min-h-96 max-h-2/5 p-4 pl-8">
                 <h1 className="text-center text-purple-900 font-bold text-3xl">Todo APP</h1>
@@ -33,7 +44,10 @@ const Todo=()=>{
                             data.map((el)=>{
                                 return(
                                    <>
-                                    <li className="bg-purple-400 rounded-sm m-1"  style={{fontSize:'20px'}} key={el.id}>{el.task} {"------------>"} {el.status? "Completed" : "Incomplete"} </li>
+                                    <li className="bg-purple-400 rounded-sm  mt-3 px-4"  style={{fontSize:'20px'}} key={el.id}>{el.task}{"---------->"}{el.status ? "Completed" : "Incomplete"}  </li>
+                                    <button className="rounded-3xl mt-1 px-6 py-2 bg-purple-400 hover:bg-emerald-400" onClick={()=>compfun(el.id)}>Completed</button>
+                                    <button className="rounded-3xl mt-1 px-6 py-2 bg-purple-400 hover:bg-red-500" onClick={()=>remfun(el.id)}>Remove</button>
+                                    
                                    </> 
                                 )
                             })
@@ -43,24 +57,10 @@ const Todo=()=>{
 
                 </div>
 
-
-
-
-
-
-
             </div>
 
-
-
-
-
-            
         )
         
-        
-
-
 }
 
 export default Todo
