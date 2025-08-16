@@ -14,7 +14,7 @@ const Todo=()=>{
        } 
 
        setData([...data,newObj])   
-         console.log(data) 
+        //  console.log(data) 
     }
 
     const compfun=(id)=>{
@@ -22,15 +22,21 @@ const Todo=()=>{
         
             data.map((el)=>{
                 if(el.id===id){
-                    console.log(el.status);
+                    // console.log(el.status);
                     el.status = true;
-                    console.log(el.status);
+                    // console.log(el.status);
                     setData(data)
                     setText()
                 }
             })
         
            
+    }
+
+    const remfun=(id)=>{
+        setData(
+            data.filter((el)=>  id !== el.id )
+        )
     }
 
         return(
@@ -51,8 +57,8 @@ const Todo=()=>{
                                 return(
                                    <>
                                     <li className="bg-purple-400 rounded-sm  mt-3 px-4"  style={{fontSize:'20px'}} key={el.id}>{el.task}{"---------->"}{el.status ? "Completed" : "Incomplete"}  </li>
-                                    <button className="rounded-3xl mt-1 px-6 py-2 bg-purple-400 hover:bg-emerald-400" onClick={()=>compfun(el.id)}>Completed</button>
-                                    <button className="rounded-3xl mt-1 px-6 py-2 bg-purple-400 hover:bg-red-500" onClick={()=>remfun(el.id)}>Remove</button>
+                                    <button className="rounded-xl text-sm mr-2 mt-1 px-4 py-1 bg-purple-400 hover:bg-emerald-400" onClick={()=>compfun(el.id)}>Completed</button>
+                                    <button className="rounded-xl text-sm mt-1 px-4 py-1 bg-purple-400 hover:bg-red-500" onClick={()=>remfun(el.id)}>Remove</button>
                                     
                                    </> 
                                 )
