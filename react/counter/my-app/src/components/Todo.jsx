@@ -17,15 +17,21 @@ const Todo=()=>{
          console.log(data) 
     }
 
-       const compfun=(id)=>{
-        // console.log(id);
+    const compfun=(id)=>{
+        // console.log(id)
         
-            data.map((el)=>
-               el.id === id ? el.status = true : el.status = false
-            )
-       setData(data)
+            data.map((el)=>{
+                if(el.id===id){
+                    console.log(el.status);
+                    el.status = true;
+                    console.log(el.status);
+                    setData(data)
+                    setText()
+                }
+            })
         
-       }
+           
+    }
 
         return(
             <div className="w-9/10 bg-sky-400 m-auto mt-8 rounded-2xl min-h-96 max-h-2/5 p-4 pl-8">
