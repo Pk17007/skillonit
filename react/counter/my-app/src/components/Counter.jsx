@@ -22,7 +22,7 @@ const Counter=()=>{
 
                  <button className="text-2xl  hover:contrast-150 scale:110"  onClick={()=>{setCount2(count2+1)}}>⬆️</button>
                  <button className="text-2xl hover:contrast-150 scale:110" onClick={()=>{setCount2(count2-1)}}>⬇️</button>
-                  <button className="text-2xl text-blue hover:contrast-150 " onClick={()=>{setCount2(0)}}>❌</button>
+                  <button className="text-2xl contrast-50  bg-red-200 text-blue hover:contrast-150 " onClick={()=>{setCount2(0)}}>❎</button>
 
              </div>
 

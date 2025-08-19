@@ -48,7 +48,7 @@ const Todo=()=>{
                 {/* <h1>{text}</h1> */}
                 <br />
                 
-                <button className="text-center text-sm bg-emerald-300 rounded-2xl px-6 py-2 mt-6 hover:bg-emerald-400 transition duration-400 " onClick={addfunc}> Add Task</button>
+                <button className=" enabled:hover:border-gray-400 text-center text-sm bg-emerald-300 rounded-2xl px-6 py-2 mt-6 hover:bg-emerald-400 transition duration-400 " onClick={addfunc}> Add Task</button>
 
                 <div className="w-9/10 bg-purple-300 rounded-2xl m-auto mt-8 p-4" >
                     <ol>
@@ -59,7 +59,6 @@ const Todo=()=>{
                                     <li className="bg-purple-400 rounded-sm  mt-3 px-4"  style={{fontSize:'20px'}} key={el.id}>{el.task}{"---------->"}{el.status ? "Completed" : "Incomplete"}  </li>
                                     <button className="rounded-xl text-sm mr-2 mt-1 px-4 py-1 bg-purple-400 hover:bg-emerald-400" onClick={()=>compfun(el.id)}>Completed</button>
                                     <button className="rounded-xl text-sm mt-1 px-4 py-1 bg-purple-400 hover:bg-red-500" onClick={()=>remfun(el.id)}>Remove</button>
-                                    
                                    </> 
                                 )
                             })
