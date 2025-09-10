@@ -20,7 +20,7 @@ const SW2 = () => {
 
   return (
     <div className="w-1/4 m-auto">
-      <h1 className="bg-emerald-300 w-7/10 m-auto mt-6 ml-4 p-2">
+      <h1 className="bg-emerald-300 rounded-full text-center w-7/10 m-auto mt-6 ml-4 p-2">
         Timer is: {timer}
       </h1>
       <button
